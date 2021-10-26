@@ -3,7 +3,7 @@ classify_documents <- function(x, y, classifier = c("svmLinear2", "xgbTree"),
                                  method = "cv",
                                  number = 7,
                                  allowParallel = TRUE,
-                                 classProbs = TRUE,
+                                 classProbs = TRUE
                                ), metric = "Accuracy", SEED = 46, ...) {
   set_seeds <- function(.control_args, seed) {
     method <- .control_args$method
