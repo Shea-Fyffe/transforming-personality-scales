@@ -5,27 +5,6 @@ classify_documents <- function(x, y, classifier = c("svmLinear2", "xgbTree"),
                                  allowParallel = TRUE,
                                  classProbs = TRUE
                                ), metric = "Accuracy", SEED = 46, ...) {
-  set_seeds <- function(.control_args, seed) {
-    method <- .control_args$method
-    numbers <- .control_args$number
-    repeats <- ifelse(!is.na(.control_args$repeats), .control_args$repeats, 1)
-    tunes <- ifelse(.control_args$method == "none", 1, 3)
-    #B is the number of resamples and integer vector of M (numbers + tune length if any)
-    B <- if (method == "cv") numbers
-    else if (method == "repeatedcv") numbers * repeats
-    else NULL
-
-    if (is.null(length)) {
-      seeds <- NULL
-    } else {
-      set.seed(seed = seed)
-      seeds <- vector(mode = "list", length = B)
-      seeds <- lapply(seeds, function(x) sample.int(n = 1000000, size = numbers + ifelse(is.null(tunes), 0, tunes)))
-      seeds[[length(seeds) + 1]] <- sample.int(n = 1000000, size = 1)
-    }
-    # return seeds
-    seeds
-  }
   control_args <- do.call(caret::trainControl, c(control, ...))
   # set-up parallel processing (if allowed)
   if (control_args$allowParallel) {
@@ -34,9 +13,7 @@ classify_documents <- function(x, y, classifier = c("svmLinear2", "xgbTree"),
   }
   fmla <- paste0(y, " ~ .")
   # set-up random seeds
-  control_args$seeds <- set_seeds(control_args, SEED)
-
-
+  set.seed(SEED)
   if (length(classifier) == 1L) {
     mdls <- caret::train(
       form = as.formula(fmla), data = x,
