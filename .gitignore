@@ -39,7 +39,9 @@ vignettes/*.pdf
 .Renviron
 
 # ignore project specific directories
+raw-data/*v00.csv
 archive/
 *_archive/
+results/
 supplemental-materials/
 /supplemental-materials/
