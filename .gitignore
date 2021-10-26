@@ -37,3 +37,9 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+# ignore project specific directories
+archive/
+*_archive/
+supplemental-materials/
+/supplemental-materials/
