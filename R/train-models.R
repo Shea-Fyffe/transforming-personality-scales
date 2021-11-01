@@ -1,65 +1,3 @@
-#' @title Train Caret Model
-#'
-#' @description A \code{caret} abstraction used in \code{run_analysis} meant to run for each \code{classifier} specified.
-#'
-#' @import caret
-#' @importFrom future availableCores
-#' @importFrom doParallel registerDoParallel
-#' @importFrom parallel makeCluster
-#'
-#' @param x A data.frame containing only features and label \code{y} (Required)
-#' @param y A character string of the column in \code{x} containing labels (Required)
-#' @param classifier A vector of \code{caret::} classification models (Default = \code{c("svmLinear2", "xgbTree")}). See \url{topepo.github.io/caret/train-models-by-tag.html} for more info.
-#' @param control A list of training arguments to pass to \code{\link[caret]{trainControl}()}.
-#' @param metric The metric to evaluate training method (Default = \code{"Accuracy"}).
-#' @param SEED An integer used for setting random seed (Default = \code{46}).
-#' @param ... Additional arguments to pass pass to \code{\link[caret]{train}()}.
-#'
-#' @return A trained caret model for each  \code{classifier} specified.
-#' @export
-#' @examples
-#' train_data <- iris
-#'
-#' trained_models <- train_model(train_data, "Species")
-#'
-#' # the svm model
-#' str(trained_models[[1]])
-#'
-#' # the xgboost model
-#' str(trained_models[[2]])
-train_model <- function(x, y, classifier = c("svmLinear2", "xgbTree"),
-                               control = list(
-                                 method = "cv",
-                                 number = 7,
-                                 allowParallel = TRUE,
-                                 classProbs = TRUE
-                               ), metric = "Accuracy", SEED = 46, ...) {
-  control_args <- do.call(caret::trainControl, control)
-  # set-up parallel processing (if allowed)
-  if (control_args$allowParallel) {
-    .clust <- parallel::makeCluster(future::availableCores() - 1)
-    doParallel::registerDoParallel(.clust)
-  }
-  fmla <- paste0(y, " ~ .")
-  # set-up random seeds
-  set.seed(SEED)
-  if (length(classifier) == 1L) {
-    mdls <- caret::train(
-      form = as.formula(fmla), data = x,
-      method = classifier, metric = metric,
-      trControl = control_args, ...)
-  } else {
-    mdls <- lapply(classifier, function(algs) {
-      mdls <- caret::train(
-        form = as.formula(fmla), data = x,
-        method = algs, metric = metric,
-        trControl = control_args, ...
-      )
-    })
-  }
-  parallel::stopCluster(.clust)
-  return(mdls)
-}
 #' @title Run Text Classification Analyses
 #'
 #' @description A wrapper using \code{train_models} meant to run for each dataset \code{x} specified.
@@ -134,5 +72,67 @@ run_analyses.list <- function(x, y, filter = NULL, analyses_labels = NULL, simpl
   if (simplify) {
     mdls <- unlist(mdls, recursive = FALSE)
   }
+  return(mdls)
+}
+#' @title Train Caret Model
+#'
+#' @description A \code{caret} abstraction used in \code{run_analysis} meant to run for each \code{classifier} specified.
+#'
+#' @import caret
+#' @importFrom future availableCores
+#' @importFrom doParallel registerDoParallel
+#' @importFrom parallel makeCluster
+#'
+#' @param x A data.frame containing only features and label \code{y} (Required)
+#' @param y A character string of the column in \code{x} containing labels (Required)
+#' @param classifier A vector of \code{caret::} classification models (Default = \code{c("svmLinear2", "xgbTree")}). See \url{topepo.github.io/caret/train-models-by-tag.html} for more info.
+#' @param control A list of training arguments to pass to \code{\link[caret]{trainControl}()}.
+#' @param metric The metric to evaluate training method (Default = \code{"Accuracy"}).
+#' @param SEED An integer used for setting random seed (Default = \code{46}).
+#' @param ... Additional arguments to pass pass to \code{\link[caret]{train}()}.
+#'
+#' @return A trained caret model for each  \code{classifier} specified.
+#' @export
+#' @examples
+#' train_data <- iris
+#'
+#' trained_models <- train_model(train_data, "Species")
+#'
+#' # the svm model
+#' str(trained_models[[1]])
+#'
+#' # the xgboost model
+#' str(trained_models[[2]])
+train_model <- function(x, y, classifier = c("svmLinear2", "xgbTree"),
+                               control = list(
+                                 method = "cv",
+                                 number = 7,
+                                 allowParallel = TRUE,
+                                 classProbs = TRUE
+                               ), metric = "Accuracy", SEED = 46, ...) {
+  control_args <- do.call(caret::trainControl, control)
+  # set-up parallel processing (if allowed)
+  if (control_args$allowParallel) {
+    .clust <- parallel::makeCluster(future::availableCores() - 1)
+    doParallel::registerDoParallel(.clust)
+  }
+  fmla <- paste0(y, " ~ .")
+  # set-up random seeds
+  set.seed(SEED)
+  if (length(classifier) == 1L) {
+    mdls <- caret::train(
+      form = as.formula(fmla), data = x,
+      method = classifier, metric = metric,
+      trControl = control_args, ...)
+  } else {
+    mdls <- lapply(classifier, function(algs) {
+      mdls <- caret::train(
+        form = as.formula(fmla), data = x,
+        method = algs, metric = metric,
+        trControl = control_args, ...
+      )
+    })
+  }
+  parallel::stopCluster(.clust)
   return(mdls)
 }
