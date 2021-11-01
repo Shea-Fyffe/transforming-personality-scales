@@ -48,3 +48,4 @@ supplemental-materials/
 /supplemental-materials/
 figs/*.pub
 figs/*.png
+./*.Rmd
