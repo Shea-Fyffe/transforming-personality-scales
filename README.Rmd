@@ -1,6 +1,7 @@
 ---
 title: "Getting Started"
 output: github_document
+output_file: "README.md"
 ---
 
 ```{r setup, include=FALSE}
