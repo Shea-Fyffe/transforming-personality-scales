@@ -1,32 +1,42 @@
----
-title: "Creating Custom Sentence Embeddings"
-output: github_document
----
+Creating Custom Sentence Embeddings
+================
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, python.reticulate = FALSE, eval = FALSE)
-```
+## Creating Pre-trained Sentence Embeddings
 
-This code is written in **Python** for the creation of *pre-trained* universal sentence encodings (USE; [Cer et al., 2018](https://arxiv.org/abs/1803.11175)) and *SBERT* sentence embeddings (SBERT; [Reimers & Gurevych, 2019](https://arxiv.org/abs/1908.10084)). These examples could be extrapolated to several different use cases. However, the focus of this tutorial is to a dataset of *fixed* (i.e., not fine-tuned) embeddings that can be used for downstream analyses such as clustering and classification.
+This colab is written in **Python** for the creation of *pre-trained*
+universal sentence encodings (USE; [Cer et al.,
+2018](https://arxiv.org/abs/1803.11175)) and *SBERT* sentence embeddings
+(SBERT; [Reimers & Gurevych, 2019](https://arxiv.org/abs/1908.10084)).
+These examples could be extrapolated to several different use cases.
+However, the focus of this tutorial is to a dataset of *fixed* (i.e.,
+not fine-tuned) embeddings that can be used for downstream analyses such
+as clustering and classification.
 
 #### Opening this notebook in Google Colab
 
-This guide has been written for use *Google Colab*. Those that wish to run the code locally must install the python modules in the **Libraries** section below. Please see how to install python modules [here](https://docs.python.org/3/installing/index.html).
+This guide has been written for use *Google Colab*. Those that wish to
+run the code locally must install the python modules in the
+**Libraries** section below. Please see how to install python modules
+[here](https://docs.python.org/3/installing/index.html).
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/14DpmE8PiT7f-7JQwQ3cLJCqF4QUUWT97?usp=sharing)
+[![Open In
+Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/14DpmE8PiT7f-7JQwQ3cLJCqF4QUUWT97?usp=sharing)
 
 ### Libraries
 
-Colab comes with a large number of Python libraries pre-loaded. However, `Sentence Transformers` is not one of those libraries. The `Sentence Transformers` library can be installed by using the code below.
+Colab comes with a large number of Python libraries pre-loaded. However,
+`Sentence Transformers` is not one of those libraries. The
+`Sentence Transformers` library can be installed by using the code
+below.
 
-```{python}
+``` python
 #@title Installing Sentence Transformers
 
 ## Uncomment command below to install Sentence Transformers
 ! pip install sentence_transformers
 ```
 
-```{python}
+``` python
 # load libraries for USE
 import tensorflow as tf
 import tensorflow_hub as hub
@@ -41,16 +51,17 @@ import os
 ```
 
 ### Using a GPU
+
 To speed things up you can use a *GPU* (*optional*).
 
-First, you'll need to enable GPUs for the notebook:
+First, you’ll need to enable GPUs for the notebook:
 
-- Navigate to Edit→Notebook Settings
-- select GPU from the Hardware Accelerator drop-down
+-   Navigate to Edit→Notebook Settings
+-   select GPU from the Hardware Accelerator drop-down
 
 Next, confirm that you can connect to the GPU with tensorflow:
 
-```{python}
+``` python
 %tensorflow_version 2.x
 device_name = tf.test.gpu_device_name()
 if device_name != '/device:GPU:0':
@@ -60,7 +71,7 @@ print('Found GPU at: {}'.format(device_name))
 
 ### Functions
 
-```{python}
+``` python
 #@title Load user-defined function to create USE embeddings
 def create_use_embeddings(model, text, return_numpy = True):
   """Create Universal Sentence Embeddings from a list of strings
@@ -77,7 +88,7 @@ def create_use_embeddings(model, text, return_numpy = True):
   return use_embeddings
 ```
 
-```{python}
+``` python
 #@title Load user-defined function to create SBERT embeddings
 def create_sbert_embeddings(model, text, return_numpy = True):
   """Create Sentence BERT Embeddings from a list of strings
@@ -94,7 +105,7 @@ def create_sbert_embeddings(model, text, return_numpy = True):
   return sbert_embeddings
 ```
 
-```{python}
+``` python
 #@title Load user-defined utility functions
 
 # Import Data function
@@ -128,37 +139,32 @@ def format_output_data(emb_df, add_df = None, emb_names_prefix = "f_use_V"):
 
 ### Variables
 
-```{python}
+``` python
 #@title Define Universal Sentence Encoder's model
 use_model = "https://tfhub.dev/google/universal-sentence-encoder/4" #@param ["https://tfhub.dev/google/universal-sentence-encoder/4", "https://tfhub.dev/google/universal-sentence-encoder-large/5"]
 ```
 
-```{python}
+``` python
 #@title Define SBERT model
 sbert_model = "paraphrase-mpnet-base-v2" #@param ["all-mpnet-base-v2", "paraphrase-mpnet-base-v2", "paraphrase-xlm-r-multilingual-v1", "paraphrase-distilroberta-base-v2","distilbert-base-nli-stsb-quora-ranking", "average_word_embeddings_glove.840B.300d"]
 ```
 
-*Note:* These models are not comprehensive by any means. One could redefine the variables for unique examples. For example by adding the code
+*Note:* These models are not comprehensive by any means. One could
+redefine the variables for unique examples. For example by adding the
+code
 
+    sbert_model = "average_word_embeddings_glove.840B.300d"
 
-```
-sbert_model = "average_word_embeddings_glove.840B.300d"
-```
+below this block would mean that the ***SBERT*** model would produce
+average GloVe embeddings.
 
-below this block would mean that the ***SBERT*** model would produce average GloVe embeddings.
-
-
-
----
-
+------------------------------------------------------------------------
 
 ## Universal Sentence Encoder Example
 
+------------------------------------------------------------------------
 
----
-
-
-```{python}
+``` python
 # here are some example sentences
 example_sentences = ['I am not always honest with myself.', 'I have no sympathy for criminals.', 'I make beautiful things.', 'I do not brag about my accomplishments.']
 
@@ -169,42 +175,47 @@ example_use_embeddings = create_use_embeddings(use_model, example_sentences)
 example_use_embeddings_df = pd.DataFrame(example_use_embeddings)
 ```
 
-```{python}
+``` python
 example_use_embeddings_df.head()
 ```
 
 ### Exporting example data to CSV
-*Note:* if you are using Colab file will be exported to a virtual directory which can be found by using the command `%cd` or `!pwd`
 
-```{python}
+*Note:* if you are using Colab file will be exported to a virtual
+directory which can be found by using the command `%cd` or `!pwd`
+
+``` python
 example_use_embeddings_df.to_csv("example-use-output-data.csv")
 ```
 
 ## Using Your Own Data
 
-While there are several ways to import data into Colab ([see here](https://colab.research.google.com/notebooks/io.ipynb)), the most intuitive way is to upload a local `.csv` file. You can do this by:
+While there are several ways to import data into Colab ([see
+here](https://colab.research.google.com/notebooks/io.ipynb)), the most
+intuitive way is to upload a local `.csv` file. You can do this by:
 
-- Clicking the ***Files*** pane (the folder icon on the left)
-- Clicking the ***Upload to session storage*** icon (left-most icon)
-- Selecting the local data file you would like to use (e.g., `.csv`,`.tsv`)
+-   Clicking the ***Files*** pane (the folder icon on the left)
+-   Clicking the ***Upload to session storage*** icon (left-most icon)
+-   Selecting the local data file you would like to use (e.g.,
+    `.csv`,`.tsv`)
 
-For this example, I've imported a file named `item-data.csv`.
+For this example, I’ve imported a file named `item-data.csv`.
 
-```{python}
+``` python
 #@title Importing custom dataset
 
 # the import_data function will return a list of sentences and the original dataset
 custom_sentences, raw_data = import_data("item-data.csv", "text")
 ```
 
-```{python}
+``` python
 # To look at the raw data you can use the head() method
 raw_data.head()
 ```
 
 ### Creating Custom USE Embeddings
 
-```{python}
+``` python
 # We use our custom function *create_use_embeddings* to produce a matrix of embeddings for our imported dataset
 custom_use_embeddings = create_use_embeddings(use_model, custom_sentences)
 
@@ -213,36 +224,36 @@ custom_use_embeddings_df = pd.DataFrame(custom_use_embeddings)
 ```
 
 #### Formatting Data for Output
-We can now use the `format_output_data()` function to combine our embedding data with our orignal dataset (`raw_data`).
 
-```{python}
+We can now use the `format_output_data()` function to combine our
+embedding data with our orignal dataset (`raw_data`).
+
+``` python
 # Remember that the first argument should be the Dataframe of embeddings
 custom_use_output_df = format_output_data(custom_use_embeddings_df, raw_data)
 ```
 
-```{python}
+``` python
 custom_output_df.head()
 ```
 
 #### Output Custom Dataset
-*Note:* if you are using Colab file will be exported to a virtual directory which can be found by using the command `%cd` (current directory) or `!pwd` (python working directory)
 
-```{python}
+*Note:* if you are using Colab file will be exported to a virtual
+directory which can be found by using the command `%cd` (current
+directory) or `!pwd` (python working directory)
+
+``` python
 custom_use_output_df.to_csv("sentence-USE-embedding-data.csv")
 ```
 
-
-
----
-
+------------------------------------------------------------------------
 
 ## SBERT Example
 
+------------------------------------------------------------------------
 
----
-
-
-```{python}
+``` python
 # Using the example sentences from the USE tutorial
 example_sentences = ['I am not always honest with myself.', 'I have no sympathy for criminals.', 'I make beautiful things.', 'I do not brag about my accomplishments.']
 
@@ -253,29 +264,33 @@ example_sbert_embeddings = create_sbert_embeddings(sbert_model, example_sentence
 example_sbert_embeddings_df = pd.DataFrame(example_sbert_embeddings)
 ```
 
-```{python}
+``` python
 # You'll notice there are more dimensions to the model we selected
 example_sbert_embeddings_df.head()
 ```
 
 ## Reminder: Using Your Own Data
 
-While there are several ways to import data into Colab ([see here](https://colab.research.google.com/notebooks/io.ipynb)), the most intuitive way is to upload a local `.csv` file. You can do this by:
+While there are several ways to import data into Colab ([see
+here](https://colab.research.google.com/notebooks/io.ipynb)), the most
+intuitive way is to upload a local `.csv` file. You can do this by:
 
-- Clicking the ***Files*** pane (the folder icon on the left)
-- Clicking the ***Upload to session storage*** icon (left-most icon)
-- Selecting the local data file you would like to use (e.g., `.csv`,`.tsv`
+-   Clicking the ***Files*** pane (the folder icon on the left)
+-   Clicking the ***Upload to session storage*** icon (left-most icon)
+-   Selecting the local data file you would like to use (e.g.,
+    `.csv`,`.tsv`
 
-If you've already completed the **Creating Custom USE Ebeddings** it is likely that the data is already in your environment 
+If you’ve already completed the **Creating Custom USE Ebeddings** it is
+likely that the data is already in your environment
 
-```{python}
+``` python
 #@title Importing custom dataset
 
 # Uncomment the code below re-import data 
 #custom_sentences, raw_data = import_data("item-data.csv", "text")
 ```
 
-```{python}
+``` python
 # We use our custom function *create_use_embeddings* to produce a matrix of embeddings for our imported dataset
 custom_sbert_embeddings = create_sbert_embeddings(sbert_model, custom_sentences)
 
@@ -287,17 +302,16 @@ custom_sbert_embeddings_df = pd.DataFrame(custom_sbert_embeddings)
 custom_sbert_output_df = format_output_data(custom_sbert_embeddings_df, raw_data)
 ```
 
-```{python}
+``` python
 custom_sbert_output_df.to_csv("sentence-SBERT-embedding-data.csv")
 ```
 
-```{python}
+``` python
 custom_sbert_embeddings = create_sbert_embeddings(sbert_model, custom_sentences, False)
 ```
 
-```{python}
+``` python
 for sentence, embedding in zip(custom_sentences, custom_sbert_embeddings):
     print("Sentence:", sentence)
     print("Embedding:", embedding)
 ```
-

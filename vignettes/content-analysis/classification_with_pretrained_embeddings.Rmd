@@ -1,0 +1,136 @@
+---
+title: "Text Classification with Pretrained Embeddings"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, python.reticulate = FALSE, eval = FALSE)
+```
+
+This code is written in **R** to illustrate the process of *text classification* with pre-trained sentence embeddings [see here](create_custom_sentence_embeddings.md).
+
+#### Downloading Materials
+
+Files will be published on `Github` as a public repository. Those wishing to download the files used in this research can do so in command-line using the following commands:
+
+#### PC
+
+1. PC Users should first download [Git Bash](https://gitforwindows.org/)
+2. Open **Git Bash**
+3. Change your directory to the location you would like to store the repository
+```
+$ cd ~/Documents/
+```
+4. Use `git clone` to create a copy of the entire repository into the current directory
+```
+$ git clone https://github.com/REDACTED-FOR-REVIEW.git
+```
+
+#### Mac
+
+1. Mac Users should first download [Git](git-scm.com/downloads)
+2. Open the macOS **Terminal** App
+3. Change your directory to the location you would like to store the repository
+```
+ cd ~/
+```
+4. Use `git clone` to create a copy of the entire repository into the current directory
+```
+git clone https://github.com/REDACTED-FOR-REVIEW.git
+```
+
+### Importing Functions, Data, and Packages
+
+We use the user defined functions found in the `~/R/` folder and data from the `~/data/content-analysis/` directory
+
+##### Packages
+```{r}
+# source the functions used in the analysis
+source("/R/train-models.R") # training wrapper
+source("/R/evaluate-models.R") # used for confusion matrices
+
+# these function use several packages
+pkgs_used <- c("caret", "yardstick", "future", "parallel", "dplyr")
+
+# install all the packages
+sapply(pkgs_used, install.packages, dependencies= TRUE)
+```
+
+##### Import Data
+
+Data for this research can be found in `~/data/content-analysis/`. These files contain the pattern `.*-embedding-data.csv`.
+
+```{r, eval=TRUE}
+# get a list of file paths
+embedding_data_files <- list.files(path = "data/content-analysis/", pattern = "embedding[-]data\\.csv$", full.names = TRUE)
+
+# import data
+embedding_datasets <- lapply(embedding_data_files, read.csv, stringsAsFactors = FALSE)
+
+```
+
+Here's what the data looks like. We now have a list of each embedding matrix used in the study
+
+```{r, eval=TRUE, echo=FALSE}
+lapply(embedding_datasets, pillar::glimpse)
+```
+
+#### Preprocessing Data
+
+We can use the file paths to add labels to our datasets.
+
+```{r}
+# here we just remove all the fluff from the data file paths so labels are readible
+analysis_labels <- gsub("\\.csv|[0-9]+|data", "", embedding_data_files)
+analysis_labels <- gsub("^(\\-|_)|(\\-|_)$", "", analysis_labels)
+
+# we can now re-label our datasets
+names(embedding_datasets) <- analysis_labels
+```
+
+Datasets have aleady be separated into test and training sets found in the `set` column. We can further `split()` our 3 datasets into training and testing sets (6 datasets in total).
+
+```{r}
+# this will split each of the datasets into test and training sets
+split_data <- lapply(embedding_datasets, function(x) {
+    x <- split(x, x[["set"]])
+})
+
+```
+
+We can now subset each training set by selecting the datasets named train (i.e., `$train`).
+
+```{r}
+# select the training sets for each of the 3 embedding datasets
+train_data <- lapply(split_data, function(x) {
+    x <- x$train
+    x
+})
+```
+
+We can do the same thing for the test set (i.e., `$test`).
+
+```{r}
+# select the test sets for each of the 3 embedding datasets
+test_data <- lapply(split_data, function(x) {
+    x <- x$test
+    x
+})
+
+# since we will be using 2 classifiers we will double the testing sets
+test_data <- test_data[rep(seq_along(test_data), each = 2)]
+```
+
+#### Training Models
+
+We've written a custom function `run_analyses()` that will train all the models at once (*note*: this may take a few minutes). See `/R/train-models.R` for a description of the arguments and more info.
+
+```{r}
+# train models by subsetting the columns starting with f and use the column 'label' as y
+trained_models <- run_analyses(train_data, "label", "^f_",
+                                  analyses_lab = analysis_labels)
+
+# append the classifier used to the analysis labels
+names(trained_models) <- paste0(names(trained_models), "-" ,sapply(trained_models, \(x) x$method))
+```
+
