@@ -12,7 +12,8 @@ knitr::opts_chunk$set(echo = TRUE, python.reticulate = FALSE)
 To remain anonymous during the review process this Github repository has masked identifying information. This restricts the functionality of the repository as it *cannot* be cloned or downloaded as a `.zip` file. 
 
 Files can be downloaded individually using the `download file` button in the top left corner.
-![button](figs/repo/button.JPG)
+
+![dl_button](figs/repo/button.JPG)
 
 # Downloading Code and Data
 

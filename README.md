@@ -8,7 +8,9 @@ masked identifying information. This restricts the functionality of the
 repository as it *cannot* be cloned or downloaded as a `.zip` file.
 
 Files can be downloaded individually using the `download file` button in
-the top left corner. ![button](./figs/repo/button.jpg)
+the top left corner.
+
+![dl\_button](figs/repo/button.JPG)
 
 # Downloading Code and Data
 
@@ -17,7 +19,7 @@ the top left corner. ![button](./figs/repo/button.jpg)
 A `.zip` file of the repository can be by accessing the repository’s
 Github page then clicking the `clone` followed by `download zip`
 
-![zip\_dl](./figs/repo/zip_dowload.png)
+![zip\_dl](figs/repo/zip_dowload.png)
 
 ### Using Command-Line
 
