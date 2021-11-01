@@ -45,5 +45,6 @@ archive/
 *_archive/
 results/
 supplemental-materials/
-figs/*
+figs/*.png
+figs/*.pub
 /*.Rmd
