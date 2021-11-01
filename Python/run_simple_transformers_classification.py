@@ -1,5 +1,4 @@
 # coding=utf-8
-# Contact Shea Fyffe, sfyffe@masonlife.gmu.edu for more info
 #
 # Simple Transformers Wrapper
 #
