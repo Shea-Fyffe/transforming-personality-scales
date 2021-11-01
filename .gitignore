@@ -23,6 +23,7 @@
 # produced vignettes
 vignettes/*.html
 vignettes/*.pdf
+vignettes/*.Rmd
 
 # OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
 .httr-oauth
@@ -39,7 +40,7 @@ vignettes/*.pdf
 .Renviron
 
 # ignore project specific directories
-raw-data/*v00.csv
+data/*v00.csv
 archive/
 *_archive/
 results/

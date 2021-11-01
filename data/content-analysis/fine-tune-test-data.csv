@@ -1,0 +1,120 @@
+source_id,guid,doc_id,scale,raw_text,text,lexical,structural,other,label_type,label,set,label_mapped_to_big5,facet
+IPIP,iavoidimposingmywillonothers,Q1015,BFAS,Avoid imposing my will on others,I avoid imposing my will on others.,1,1,1,hard,agreeableness,test,agreeableness,agreeableness
+IPIP,irarelyputpeopleunderpressure,Q1016,BFAS,Rarely put people under pressure,I rarely put people under pressure.,1,1,1,hard,agreeableness,test,agreeableness,positive expressivity
+IPIP,iamoutformyownpersonalgain,Q1022,BFAS,Am out for my own personal gain,I am out for my own personal gain.,1,1,1,hard,agreeableness,test,agreeableness,positive expressivity
+IPIP,ishowmyfeelingswheniamhappy,Q1045,BFAS,Show my feelings when I'm happy,I show my feelings when I am happy.,1,1,1,hard,extraversion,test,extraversion,vitality/enthusiasm/zest
+IPIP,ihaveastrongpersonality,Q1054,BFAS,Have a strong personality,I have a strong personality.,1,1,1,hard,extraversion,test,extraversion,assertiveness
+IPIP,ibelieveinhumangoodness,Q122,NEO-PI-R,Believe in human goodness,I believe in human goodness.,0,1,1,hard,agreeableness,test,agreeableness,trust
+IPIP,ibelievethatthereisnoabsoluterightandwrong,Q128,NEO-PI-R,Believe that there is no absolute right and wrong,I believe that there is no absolute right and wrong.,0,1,1,hard,openness,test,openness,o6:li
+IPIP,iknowtheanswerstomanyquestions,Q1696,AB5C,Know the answers to many questions,I know the answers to many questions.,1,1,1,hard,openness,test,openness,creativity/originality
+IPIP,iamalwaysinthesamemood,Q3161,AB5C,Am always in the same mood,I am always in the same mood.,1,1,1,hard,neuroticism,test,neuroticism,tranquility
+IPIP,iamnotdisturbedbyevents,Q3167,AB5C,Am not disturbed by events,I am not disturbed by events.,1,1,1,hard,neuroticism,test,neuroticism,tranquility
+IPIP,iamnotintouchwithmyfeelings,Q3206,AB5C,Am not in touch with my feelings,I am not in touch with my feelings.,1,1,1,hard,agreeableness,test,agreeableness,empathy
+IPIP,iamquietaroundstrangers,Q3220,AB5C,Am quiet around strangers,I am quiet around strangers.,1,1,1,hard,extraversion,test,extraversion,gregariousness
+IPIP,ianticipatetheneedsofothers,Q3227,AB5C,Anticipate the needs of others,I anticipate the needs of others.,1,1,1,hard,agreeableness,test,agreeableness,empathy
+IPIP,iseldomgetemotional,Q3236,AB5C,Seldom get emotional,I seldom get emotional.,1,1,1,hard,neuroticism,test,neuroticism,imperturbability
+IPIP,ibelievepeopleshouldfendforthemselves,Q3243,AB5C,Believe that people should fend for themselves,I believe people should fend for themselves.,1,1,1,hard,agreeableness,test,agreeableness,sympathy
+IPIP,iseldomtakeoffense,Q3250,AB5C,Seldom take offense,I seldom take offense.,1,1,1,hard,neuroticism,test,neuroticism,stability
+IPIP,icheckovermywork,Q3271,AB5C,Check over my work,I check over my work.,1,1,1,hard,conscientiousness,test,conscientiousness,dutifulness
+IPIP,icomeupwithboldplans,Q3275,AB5C,Come up with bold plans,I come up with bold plans.,1,1,1,hard,openness,test,openness,ingenuity
+IPIP,iconsidermyselfanaverageperson,Q3278,AB5C,Consider myself an average person,I consider myself an average person.,1,1,1,hard,openness,test,openness,creativity/originality
+IPIP,idisclosemyintimatethoughts,Q3291,AB5C,Disclose my intimate thoughts,I disclose my intimate thoughts.,1,1,1,hard,extraversion,test,extraversion,self-disclosure
+IPIP,idislikeimperfectwork,Q3292,AB5C,Dislike imperfect work,I dislike imperfect work.,1,1,1,hard,conscientiousness,test,conscientiousness,rationality
+IPIP,idodangerousthings,Q3301,AB5C,Do dangerous things,I do dangerous things.,1,1,1,hard,agreeableness,test,agreeableness,cooperation
+IPIP,idonotenjoygoingtoartmuseums,Q3304,AB5C,Do not enjoy going to art museums,I do not enjoy going to art museums.,1,1,1,hard,openness,test,openness,imagination
+IPIP,idothingsaccordingtoaplan,Q3312,AB5C,Do things according to a plan,I do things according to a plan.,1,1,1,hard,conscientiousness,test,conscientiousness,conscientiousness
+IPIP,idonotunderstandpeoplewhogetemotional,Q3336,AB5C,Don't understand people who get emotional,I do not understand people who get emotional.,1,1,1,hard,agreeableness,test,agreeableness,tenderness
+IPIP,ienjoybeingonthego,Q3339,AB5C,Enjoy being on the go,I enjoy being on the go.,1,1,1,hard,extraversion,test,extraversion,sociability
+IPIP,ienjoydiscussingmoviesandbookswithothers,Q3344,AB5C,Enjoy discussing movies and books with others,I enjoy discussing movies and books with others.,1,1,1,hard,openness,test,openness,reflection
+IPIP,ifeelcomfortablearoundpeople,Q3358,AB5C,Feel comfortable around people,I feel comfortable around people.,1,1,1,hard,extraversion,test,extraversion,poise
+IPIP,ibecomeoverwhelmedbyevents,Q3360,AB5C,Become overwhelmed by events,I become overwhelmed by events.,1,1,1,hard,neuroticism,test,neuroticism,toughness
+IPIP,ifollowthroughonmycommitments,Q3371,AB5C,Follow through on my commitments,I follow through on my commitments.,1,1,1,hard,conscientiousness,test,conscientiousness,organization
+IPIP,igetchoresdonerightaway,Q3377,AB5C,Get chores done right away,I get chores done right away.,1,1,1,hard,conscientiousness,test,conscientiousness,efficiency
+IPIP,icannotstandbeingcontradicted,Q3379,AB5C,Can't stand being contradicted,I cannot stand being contradicted.,1,1,1,hard,neuroticism,test,neuroticism,cool-headedness
+IPIP,igomyownway,Q3385,AB5C,Go my own way,I go my own way.,1,1,1,hard,agreeableness,test,agreeableness,sociability
+IPIP,ihaveaneyefordetail,Q3396,AB5C,Have an eye for detail,I have an eye for detail.,1,1,1,hard,conscientiousness,test,conscientiousness,organization
+IPIP,ihavelittletosay,Q3405,AB5C,Have little to say,I have little to say.,1,1,1,hard,extraversion,test,extraversion,leadership
+IPIP,idonotknowwhyidosomeofthethingsido,Q3416,AB5C,Don't know why I do some of the things I do,I do not know why I do some of the things I do.,1,1,1,hard,neuroticism,test,neuroticism,moderation
+IPIP,ikeepmythoughtstomyself,Q3417,AB5C,Keep my thoughts to myself,I keep my thoughts to myself.,1,1,1,hard,extraversion,test,extraversion,gregariousness
+IPIP,iknowhowtogetaroundtherules,Q3425,AB5C,Know how to get around the rules,I know how to get around the rules.,1,1,1,hard,extraversion,test,extraversion,provocativeness
+IPIP,ifeelthreatenedeasily,Q3438,AB5C,Feel threatened easily,I feel threatened easily.,1,1,1,hard,neuroticism,test,neuroticism,happiness
+IPIP,igetangryeasily,Q3451,AB5C,Get angry easily,I get angry easily.,1,1,1,hard,neuroticism,test,neuroticism,calmness
+IPIP,iliketolaughoutloud,Q3452,AB5C,Like to laugh out loud,I like to laugh out loud.,1,1,1,hard,conscientiousness,test,conscientiousness,cautiousness
+IPIP,iliketosolvecomplexproblems,Q3455,AB5C,Like to solve complex problems,I like to solve complex problems.,1,1,1,hard,openness,test,openness,creativity/originality
+IPIP,ilovelife,Q3471,AB5C,Love life,I love life.,1,1,1,hard,extraversion,test,extraversion,poise
+IPIP,imakeinsightfulremarks,Q3481,AB5C,Make insightful remarks,I make insightful remarks.,1,1,1,hard,openness,test,openness,intellect
+IPIP,imakeplansandsticktothem,Q3486,AB5C,Make plans and stick to them,I make plans and stick to them.,1,1,1,hard,conscientiousness,test,conscientiousness,efficiency
+IPIP,imeetchallenges,Q3489,AB5C,Meet challenges,I meet challenges.,1,1,1,hard,conscientiousness,test,conscientiousness,competence
+IPIP,ineverchallengethings,Q3497,AB5C,Never challenge things,I never challenge things.,1,1,1,hard,openness,test,openness,depth
+IPIP,ipostponedecisions,Q3514,AB5C,Postpone decisions,I postpone decisions.,1,1,1,hard,conscientiousness,test,conscientiousness,efficiency
+IPIP,iputoffunpleasanttasks,Q3521,AB5C,Put off unpleasant tasks,I put off unpleasant tasks.,1,1,1,hard,conscientiousness,test,conscientiousness,conscientiousness
+IPIP,irarelylookforadeepermeaninginthings,Q3527,AB5C,Rarely look for a deeper meaning in things,I rarely look for a deeper meaning in things.,1,1,1,hard,openness,test,openness,depth
+IPIP,ihavedayswheniammadattheworld,Q3528,AB5C,Have days when I'm mad at the world,I have days when I am mad at the world.,1,1,1,hard,neuroticism,test,neuroticism,calmness
+IPIP,irarelysmile,Q3530,AB5C,Rarely smile,I rarely smile.,1,1,1,hard,agreeableness,test,agreeableness,warmth
+IPIP,ikeepupanappearance,Q3531,AB5C,Keep up an appearance,I keep up an appearance.,1,1,1,hard,neuroticism,test,neuroticism,cool-headedness
+IPIP,irespectauthority,Q3536,AB5C,Respect authority,I respect authority.,1,1,1,hard,conscientiousness,test,conscientiousness,morality
+IPIP,ithinkofothersfirst,Q354,AB5C,Think of others first,I think of others first.,1,1,1,hard,agreeableness,test,agreeableness,nurturance
+IPIP,iseekdanger,Q3548,AB5C,Seek danger,I seek danger.,1,1,1,hard,extraversion,test,extraversion,nurturance
+IPIP,itakeaninterestinotherpeoplelives,Q3577,AB5C,Take an interest in other people's lives,I take an interest in other people lives.,1,1,1,hard,agreeableness,test,agreeableness,sympathy
+IPIP,itakeprecautions,Q3583,AB5C,Take precautions,I take precautions.,1,1,1,hard,conscientiousness,test,conscientiousness,cautiousness
+IPIP,itaketimetoreflectonthings,Q3587,AB5C,Take time to reflect on things,I take time to reflect on things.,1,1,1,hard,openness,test,openness,reflection
+IPIP,iwanttomeansomethingtoothers,Q3626,AB5C,Want to mean something to others,I want to mean something to others.,1,1,1,hard,agreeableness,test,agreeableness,tenderness
+IPIP,iwanttopleaseothers,Q3627,AB5C,Want to please others,I want to please others.,1,1,1,hard,agreeableness,test,agreeableness,tenderness
+IPIP,iamhardtosatisfy,Q363,AB5C,Am hard to satisfy,I am hard to satisfy.,1,1,1,hard,agreeableness,test,agreeableness,pleasantness
+IPIP,istarttasksrightaway,Q365,NEO-PI-R,Start tasks right away,I start tasks right away.,0,1,1,hard,conscientiousness,test,conscientiousness,self-discipline
+IPIP,iworkhard,Q366,NEO-PI-R,Work hard,I work hard.,0,1,1,hard,conscientiousness,test,conscientiousness,industriousness/perseverance/persistence
+IPIP,iwanteverydetailtakencareof,Q375,AB5C,Want every detail taken care of,I want every detail taken care of.,1,1,1,hard,conscientiousness,test,conscientiousness,perfectionism
+IPIP,ishowmysadness,Q3887,HEXACO,Show my sadness,I show my sadness.,0,1,1,hard,neuroticism,test,neuroticism,conformity/dependence/need for approval
+IPIP,iliketogetlostinthought,Q390,AB5C,Like to get lost in thought,I like to get lost in thought.,1,1,1,hard,openness,test,openness,depth
+IPIP,iworryaboutthings,Q398,AB5C,Worry about things,I worry about things.,1,1,1,hard,neuroticism,test,neuroticism,happiness
+IPIP,ihatebeingthecenterofattention,Q414,HEXACO,Hate being the center of attention,I hate being the center of attention.,0,1,1,hard,extraversion,test,extraversion,social boldness
+IPIP,iamnotgoodatgettingpeopletolikeme,Q4192,6FPQ,Am not good at getting people to like me,I am not good at getting people to like me.,0,1,1,hard,extraversion,test,extraversion,extraversion
+IPIP,iamsomeonewhohasfewartisticinterests,Q4400,BFI-2,I am someone who has few artistic interests,I am someone who has few artistic interests.,1,1,1,hard,openness,test,openness,openness
+IPIP,iamsomeonewhoisfascinatedbyartmusicorliterature,Q4415,BFI-2,"I am someone who is fascinated by art, music, or literature",I am someone who is fascinated by art music or literature.,1,1,1,hard,openness,test,openness,openness
+IPIP,iamsomeonewhohasaforgivingnature,Q4422,BFI-2,I am someone who has a forgiving nature,I am someone who has a forgiving nature.,1,1,1,hard,agreeableness,test,agreeableness,agreeableness
+IPIP,iamsomeonewhoworriesalot,Q4429,BFI-2,I am someone who worries a lot,I am someone who worries a lot.,1,1,1,hard,neuroticism,test,neuroticism,neuroticism
+IPIP,iamsomeonewhopreferstohaveotherstakecharge,Q4446,BFI-2,I am someone who prefers to have others take charge,I am someone who prefers to have others take charge.,1,1,1,hard,extraversion,test,extraversion,extraversion
+IPIP,iamsomeonewhoispersistentworksuntilthetaskisfinished,Q4448,BFI-2,"I am someone who is persistent, works until the task is finished",I am someone who is persistent works until the task is finished.,1,1,1,hard,conscientiousness,test,conscientiousness,conscientiousness
+IPIP,iamsomeonewhotendstofeeldepressedblue,Q4449,BFI-2,"I am someone who tends to feel depressed, blue",I am someone who tends to feel depressed blue.,1,1,1,hard,neuroticism,test,neuroticism,neuroticism
+IPIP,iamsomeonewhosometimesbehavesirresponsibly,Q4453,BFI-2,I am someone who sometimes behaves irresponsibly,I am someone who sometimes behaves irresponsibly.,1,1,1,hard,conscientiousness,test,conscientiousness,conscientiousness
+IPIP,iamsomeonewhoisoriginalcomesupwithnewideas,Q4455,BFI-2,"I am someone who is original, comes up with new ideas",I am someone who is original comes up with new ideas.,1,1,1,hard,openness,test,openness,openness
+IPIP,iamaphysicalcoward,Q4756,HEXACO,Am a physical coward,I am a physical coward.,0,1,1,hard,neuroticism,test,neuroticism,fearfulness
+IPIP,iliketodofrighteningthings,Q4761,HEXACO,Like to do frightening things,I like to do frightening things.,0,1,1,hard,neuroticism,test,neuroticism,fearfulness
+IPIP,ilovedangeroussituations,Q4763,HEXACO,Love dangerous situations,I love dangerous situations.,0,1,1,hard,neuroticism,test,neuroticism,fearfulness
+IPIP,iwouldbeafraidtogiveaspeechinpublic,Q4811,HEXACO,Would be afraid to give a speech in public,I would be afraid to give a speech in public.,0,1,1,hard,extraversion,test,extraversion,social boldness
+IPIP,iamusuallyactiveandfullofenergy,Q4828,HEXACO,Am usually active and full of energy,I am usually active and full of energy.,0,1,1,hard,extraversion,test,extraversion,liveliness
+IPIP,ifeelhealthyandvibrantmostofthetime,Q4830,HEXACO,Feel healthy and vibrant most of the time,I feel healthy and vibrant most of the time.,0,1,1,hard,extraversion,test,extraversion,liveliness
+IPIP,igetbackatpeoplewhoinsultme,Q4842,HEXACO,Get back at people who insult me,I get back at people who insult me.,0,1,1,hard,agreeableness,test,agreeableness,forgiveness/mercy
+IPIP,ipaytoolittleattentiontodetails,Q4904,HEXACO,Pay too little attention to details,I pay too little attention to details.,0,1,1,hard,conscientiousness,test,conscientiousness,perfectionism
+IPIP,idothingswithoutthinkingoftheconsequences,Q4910,HEXACO,Do things without thinking of the consequences,I do things without thinking of the consequences.,0,1,1,hard,conscientiousness,test,conscientiousness,prudence
+IPIP,iswimagainstthecurrent,Q4950,HEXACO,Swim against the current,I swim against the current.,0,1,1,hard,openness,test,openness,unconventionality
+IPIP,iwouldhatetobeconsideredoddorstrange,Q4951,HEXACO,Would hate to be considered odd or strange,I would hate to be considered odd or strange.,0,1,1,hard,openness,test,openness,unconventionality
+IPIP,ihavearichvocabulary,Q5614,7FACTOR,Have a rich vocabulary,I have a rich vocabulary.,1,1,1,hard,openness,test,openness,intellect
+IPIP,ihavedifficultyunderstandingabstractideas,Q5617,7FACTOR,Have difficulty understanding abstract ideas,I have difficulty understanding abstract ideas.,1,1,1,hard,openness,test,openness,intellect
+IPIP,ijumpintothingswithoutthinking,Q5622,7FACTOR,Jump into things without thinking,I jump into things without thinking.,1,1,1,hard,conscientiousness,test,conscientiousness,conscientiousness
+IPIP,italktoalotofdifferentpeopleatparties,Q5641,7FACTOR,Talk to a lot of different people at parties,I talk to a lot of different people at parties.,1,1,1,hard,extraversion,test,extraversion,extraversion
+IPIP,itrytofollowtherules,Q5643,7FACTOR,Try to follow the rules,I try to follow the rules.,1,1,1,hard,conscientiousness,test,conscientiousness,conscientiousness
+IPIP,iwillnotprobedeeplyintoasubject,Q5645,7FACTOR,Will not probe deeply into a subject,I will not probe deeply into a subject.,1,1,1,hard,openness,test,openness,intellect
+SAPA,controlsdesires,Q5986,SPI,Controls desires,Others perceive that I my control desires.,0,1,1,hard,conscientiousness,test,conscientiousness,self-control
+SAPA,isacceptingofimperfections,Q6008,SPI,Is accepting of imperfections,Others perceive that I am accepting of imperfections.,0,1,1,hard,agreeableness,test,agreeableness,perfectionism
+SAPA,isacreativethinker,Q6009,SPI,Is a creative thinker,Others perceive that I am a creative thinker.,0,1,1,hard,openness,test,openness,creativity
+SAPA,ishappywithlife,Q6018,SPI,Is happy with life,Others perceive that I am happy with life.,0,1,1,hard,extraversion,test,extraversion,well-being
+SAPA,ispatientandpolite,Q6025,SPI,Is patient and polite,Others perceive that I am patient and polite.,0,1,1,hard,agreeableness,test,agreeableness,politeness
+SAPA,likestohelpothers,Q6033,SPI,Likes to help others,Others perceive that I like to help others.,0,1,1,hard,agreeableness,test,agreeableness,compassion
+SAPA,preferssafeactivities,Q6040,SPI,Prefers safe activities,Others perceive that I prefer safe activities.,0,1,1,hard,extraversion,test,extraversion,sensation-seeking
+SAPA,preferstowatchfromthesidelines,Q6043,SPI,Prefers to watch from the sidelines,Others perceive that I prefer to watch from the sidelines.,0,1,1,hard,extraversion,test,extraversion,attention-seeking
+SAPA,reflectsonthings,Q6045,SPI,Reflects on things,Others perceive that I reflect on things.,0,1,1,hard,openness,test,openness,introspection
+SAPA,resistschange,Q6046,SPI,Resists change,Others perceive that I resist change.,0,1,1,hard,openness,test,openness,adaptability
+IPIP,icheerpeopleup,Q612,NEO-PI-R,Cheer people up,I cheer people up.,0,1,1,hard,extraversion,test,extraversion,friendliness
+IPIP,itendtovoteforliberalpoliticalcandidates,Q625,NEO-PI-R,Tend to vote for liberal political candidates,I tend to vote for liberal political candidates.,0,1,1,hard,openness,test,openness,liberalism
+IPIP,ihavedifficultyimaginingthings,Q6333,AB5C,Have difficulty imagining things,I have difficulty imagining things.,1,1,1,hard,openness,test,openness,ingenuity
+IPIP,ilovechildren,Q6382,AB5C,Love children,I love children.,1,1,1,hard,agreeableness,test,agreeableness,agreeableness
+IPIP,itreatallpeopleequally,Q652,NEO-PI-R,Treat all people equally,I treat all people equally.,0,1,1,hard,agreeableness,test,agreeableness,agreeableness
+IPIP,irarelycomplain,Q702,NEO-PI-R,Rarely complain,I rarely complain.,0,1,1,hard,neuroticism,test,neuroticism,calmness
+IPIP,ilikealeisurelylifestyle,Q780,NEO-PI-R,Like a leisurely lifestyle,I like a leisurely lifestyle.,0,1,1,hard,extraversion,test,extraversion,activity-level
+IPIP,ithinkhighlyofmyself,Q908,NEO-PI-R,Think highly of myself,I think highly of myself.,0,1,1,hard,agreeableness,test,agreeableness,leadership
+IPIP,icannotstandweakpeople,Q922,NEO-PI-R,Can't stand weak people,I cannot stand weak people.,0,1,1,hard,agreeableness,test,agreeableness,sympathy
+IPIP,idomorethanwhatisexpectedofme,Q956,NEO-PI-R,Do more than what's expected of me,I do more than what is expected of me.,0,1,1,hard,conscientiousness,test,conscientiousness,achievement-striving
+IPIP,iactwithoutthinking,Q980,NEO-PI-R,Act without thinking,I act without thinking.,0,1,1,hard,conscientiousness,test,conscientiousness,cautiousness
+IPIP,iamapersonwhosemoodsgoupanddowneasily,Q986,BFAS,Am a person whose moods go up and down easily,I am a person whose moods go up and down easily.,1,1,1,hard,neuroticism,test,neuroticism,anger
+IPIP,irarelylosemycomposure,Q991,BFAS,Rarely lose my composure,I rarely lose my composure.,1,1,1,hard,neuroticism,test,neuroticism,anger

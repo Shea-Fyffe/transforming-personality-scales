@@ -1,0 +1,733 @@
+{"prompt":"agreeableness ->", "completion": " I become frustrated and angry with people when they do not live up to my expectations."}
+{"prompt":"agreeableness ->", "completion": " When interacting with a group of people I am often bothered by at least one of them."}
+{"prompt":"extraversion ->", "completion": " I seem to derive less enjoyment from interacting with people than others do."}
+{"prompt":"openness ->", "completion": " Others perceive that I do not have original ideas and I am not inventive."}
+{"prompt":"openness ->", "completion": " I believe that criminals should receive help rather than punishment."}
+{"prompt":"neuroticism ->", "completion": " I suspect that my facial expressions give me away when I feel sad."}
+{"prompt":"extraversion ->", "completion": " I would not enjoy a job that involves a lot of social interaction."}
+{"prompt":"agreeableness ->", "completion": " I get upset if others change the way that I have arranged things."}
+{"prompt":"openness ->", "completion": " I seldom notice the emotional aspects of paintings and pictures."}
+{"prompt":"neuroticism ->", "completion": " I am someone who stays optimistic after experiencing a setback."}
+{"prompt":"openness ->", "completion": " I am someone who avoids intellectual philosophical discussions."}
+{"prompt":"openness ->", "completion": " I am someone who is inventive finds clever ways to do things."}
+{"prompt":"conscientiousness ->", "completion": " I am someone who is systematic likes to keep things in order."}
+{"prompt":"openness ->", "completion": " I do not bother worrying about political and social problems."}
+{"prompt":"neuroticism ->", "completion": " I would never go riding down a stretch of rapids in a canoe."}
+{"prompt":"neuroticism ->", "completion": " I am seldom bothered by the apparent suffering of strangers."}
+{"prompt":"agreeableness ->", "completion": " I find that it takes a lot to make me feel angry at someone."}
+{"prompt":"neuroticism ->", "completion": " I would be good at rescuing people from a burning building."}
+{"prompt":"neuroticism ->", "completion": " I often worry about things that turn out to be unimportant."}
+{"prompt":"agreeableness ->", "completion": " I am someone who is respectful treats others with respect."}
+{"prompt":"neuroticism ->", "completion": " I get upset by unpleasant thoughts that come into my mind."}
+{"prompt":"agreeableness ->", "completion": " Others perceive that I believe people have bad intentions."}
+{"prompt":"openness ->", "completion": " Others perceive that I cannot handle a lot of information."}
+{"prompt":"openness ->", "completion": " Others perceive that I do not stop to contemplate my life."}
+{"prompt":"neuroticism ->", "completion": " Others perceive that I am composed and not easily annoyed."}
+{"prompt":"openness ->", "completion": " Others perceive that I am disinterested in abstract ideas."}
+{"prompt":"extraversion ->", "completion": " Others perceive that I like to be the center of attention."}
+{"prompt":"openness ->", "completion": " I believe that too much tax money goes to support artists."}
+{"prompt":"conscientiousness ->", "completion": " I am someone who has difficulty getting started on tasks."}
+{"prompt":"agreeableness ->", "completion": " Others perceive that I am indifferent to others feelings."}
+{"prompt":"openness ->", "completion": " I would like to live for a while in a different country."}
+{"prompt":"agreeableness ->", "completion": " I feel sympathy for those who are worse off than myself."}
+{"prompt":"conscientiousness ->", "completion": " I often forget to put things back in their proper place."}
+{"prompt":"openness ->", "completion": " I am someone who is curious about many different things."}
+{"prompt":"neuroticism ->", "completion": " I am someone who is emotionally stable not easily upset."}
+{"prompt":"neuroticism ->", "completion": " I am someone who is temperamental gets emotional easily."}
+{"prompt":"neuroticism ->", "completion": " I immediately feel sad when hearing of an unhappy event."}
+{"prompt":"neuroticism ->", "completion": " I seldom feel weepy while reading a sad part of a story."}
+{"prompt":"openness ->", "completion": " Others perceive that I believe in the importance of art."}
+{"prompt":"agreeableness ->", "completion": " Others perceive that I tell people when I am frustrated."}
+{"prompt":"openness ->", "completion": " I enjoy being thought of as a normal mainstream person."}
+{"prompt":"openness ->", "completion": " I am someone who has little interest in abstract ideas."}
+{"prompt":"extraversion ->", "completion": " Others perceive that I like a brisk and busy lifestyle."}
+{"prompt":"neuroticism ->", "completion": " I do not worry about things that have already happened."}
+{"prompt":"neuroticism ->", "completion": " I am someone who is moody has up and down mood swings."}
+{"prompt":"agreeableness ->", "completion": " I am someone who is helpful and unselfish with others."}
+{"prompt":"conscientiousness ->", "completion": " I am someone who is reliable can always be counted on."}
+{"prompt":"extraversion ->", "completion": " Others perceive that I am assertive and I take charge."}
+{"prompt":"openness ->", "completion": " I tend to vote for conservative political candidates."}
+{"prompt":"openness ->", "completion": " I see beauty in things that others might not notice."}
+{"prompt":"neuroticism ->", "completion": " I am someone who feels secure comfortable with self."}
+{"prompt":"agreeableness ->", "completion": " I am someone who is suspicious of others intentions."}
+{"prompt":"neuroticism ->", "completion": " I am someone who keeps their emotions under control."}
+{"prompt":"openness ->", "completion": " I am someone who thinks poetry and plays are boring."}
+{"prompt":"neuroticism ->", "completion": " I would fear walking in a high-crime part of a city."}
+{"prompt":"conscientiousness ->", "completion": " Others perceive that I disregard rules to get ahead."}
+{"prompt":"conscientiousness ->", "completion": " Others perceive that I like things to be just right."}
+{"prompt":"extraversion ->", "completion": " I prefer to deal with strangers in a formal manner."}
+{"prompt":"agreeableness ->", "completion": " I am someone who is compassionate has a soft heart."}
+{"prompt":"extraversion ->", "completion": " I am someone who finds it hard to influence people."}
+{"prompt":"openness ->", "completion": " I like to be thought of as a normal kind of person."}
+{"prompt":"agreeableness ->", "completion": " I am someone who feels little sympathy for others."}
+{"prompt":"extraversion ->", "completion": " I am someone who is less active than other people."}
+{"prompt":"neuroticism ->", "completion": " Others perceive that I have frequent mood changes."}
+{"prompt":"extraversion ->", "completion": " I usually like to spend my free time with people."}
+{"prompt":"agreeableness ->", "completion": " I am someone who tends to find fault with others."}
+{"prompt":"openness ->", "completion": " I am someone who has difficulty imagining things."}
+{"prompt":"conscientiousness ->", "completion": " I am someone who leaves a mess does not clean up."}
+{"prompt":"conscientiousness ->", "completion": " I act impulsively when something is bothering me."}
+{"prompt":"conscientiousness ->", "completion": " Others perceive that I hang around doing nothing."}
+{"prompt":"neuroticism ->", "completion": " Others perceive that I am moody and easily upset."}
+{"prompt":"extraversion ->", "completion": " Others perceive that I keep others at a distance."}
+{"prompt":"extraversion ->", "completion": " Others perceive that I prefer to let others lead."}
+{"prompt":"openness ->", "completion": " Others perceive that I understand things quickly."}
+{"prompt":"extraversion ->", "completion": " I would describe my experiences as somewhat dull."}
+{"prompt":"neuroticism ->", "completion": " I am not bothered by difficult social situations."}
+{"prompt":"openness ->", "completion": " I am not interested in speculating about things."}
+{"prompt":"neuroticism ->", "completion": " I am someone who is relaxed handles stress well."}
+{"prompt":"neuroticism ->", "completion": " I am someone who rarely feels anxious or afraid."}
+{"prompt":"conscientiousness ->", "completion": " I believe that laws should be strictly enforced."}
+{"prompt":"extraversion ->", "completion": " Others perceive that I am open with my feelings."}
+{"prompt":"extraversion ->", "completion": " Others perceive that I like being around people."}
+{"prompt":"extraversion ->", "completion": " I would never go hang gliding or bungee jumping."}
+{"prompt":"openness ->", "completion": " I am not interested in theoretical discussions."}
+{"prompt":"neuroticism ->", "completion": " I experience very few emotional highs and lows."}
+{"prompt":"extraversion ->", "completion": " I have a natural talent for influencing people."}
+{"prompt":"extraversion ->", "completion": " I am someone who rarely feels excited or eager."}
+{"prompt":"conscientiousness ->", "completion": " I am someone who is efficient gets things done."}
+{"prompt":"agreeableness ->", "completion": " I am someone who is polite courteous to others."}
+{"prompt":"agreeableness ->", "completion": " I am someone who assumes the best about people."}
+{"prompt":"openness ->", "completion": " I know that my ideas sometimes surprise people."}
+{"prompt":"openness ->", "completion": " I like to be viewed as proper and conventional."}
+{"prompt":"extraversion ->", "completion": " Others perceive that I enjoy being with people."}
+{"prompt":"openness ->", "completion": " Others perceive that I am not a typical person."}
+{"prompt":"extraversion ->", "completion": " I am someone who has an assertive personality."}
+{"prompt":"extraversion ->", "completion": " I am someone who is dominant acts as a leader."}
+{"prompt":"agreeableness ->", "completion": " I am someone who starts arguments with others."}
+{"prompt":"extraversion ->", "completion": " I am someone who is sometimes shy introverted."}
+{"prompt":"openness ->", "completion": " I have trouble guessing how others will react."}
+{"prompt":"openness ->", "completion": " I seldom experience sudden intuitive insights."}
+{"prompt":"neuroticism ->", "completion": " Others perceive that I am not easily bothered."}
+{"prompt":"conscientiousness ->", "completion": " Others perceive that I make careful decisions."}
+{"prompt":"conscientiousness ->", "completion": " Others perceive that I neglect my work duties."}
+{"prompt":"conscientiousness ->", "completion": " I believe in a logical answer for everything."}
+{"prompt":"conscientiousness ->", "completion": " I quickly lose interest in the tasks I start."}
+{"prompt":"agreeableness ->", "completion": " I am someone who is sometimes rude to others."}
+{"prompt":"agreeableness ->", "completion": " I am not interested in other people problems."}
+{"prompt":"neuroticism ->", "completion": " Others perceive that I am emotionally stable."}
+{"prompt":"agreeableness ->", "completion": " Others perceive that I am trusting of others."}
+{"prompt":"openness ->", "completion": " Others perceive that I roll with the punches."}
+{"prompt":"conscientiousness ->", "completion": " Others perceive that I succumb to temptation."}
+{"prompt":"extraversion ->", "completion": " I do not mind being the center of attention."}
+{"prompt":"openness ->", "completion": " I love to think up new ways of doing things."}
+{"prompt":"conscientiousness ->", "completion": " I am someone who keeps things neat and tidy."}
+{"prompt":"neuroticism ->", "completion": " Others perceive that I get irritated easily."}
+{"prompt":"neuroticism ->", "completion": " I feel that I am unable to deal with things."}
+{"prompt":"openness ->", "completion": " I believe that we coddle criminals too much."}
+{"prompt":"openness ->", "completion": " I like to stand during the national anthem."}
+{"prompt":"agreeableness ->", "completion": " I am easily talked into doing silly things."}
+{"prompt":"agreeableness ->", "completion": " I am indifferent to the feelings of others."}
+{"prompt":"openness ->", "completion": " I do not enjoy watching dance performances."}
+{"prompt":"agreeableness ->", "completion": " I believe that others have good intentions."}
+{"prompt":"conscientiousness ->", "completion": " I want things to proceed according to plan."}
+{"prompt":"conscientiousness ->", "completion": " I set high standards for myself and others."}
+{"prompt":"openness ->", "completion": " I am someone who is complex a deep thinker."}
+{"prompt":"extraversion ->", "completion": " I am someone who shows a lot of enthusiasm."}
+{"prompt":"extraversion ->", "completion": " I tell people about it when I am irritated."}
+{"prompt":"extraversion ->", "completion": " I feel that I have a lot of inner strength."}
+{"prompt":"openness ->", "completion": " I carry the conversation to a higher level."}
+{"prompt":"conscientiousness ->", "completion": " Others perceive that I act before thinking."}
+{"prompt":"extraversion ->", "completion": " Others perceive that I am good with people."}
+{"prompt":"extraversion ->", "completion": " Others perceive that I am socially awkward."}
+{"prompt":"neuroticism ->", "completion": " Others perceive that I often feel hopeless."}
+{"prompt":"extraversion ->", "completion": " I am skilled in handling social situations."}
+{"prompt":"neuroticism ->", "completion": " I am afraid that I will do the wrong thing."}
+{"prompt":"openness ->", "completion": " I believe that we should be tough on crime."}
+{"prompt":"agreeableness ->", "completion": " I believe that people are essentially evil."}
+{"prompt":"neuroticism ->", "completion": " I am comfortable in unfamiliar situations."}
+{"prompt":"extraversion ->", "completion": " I cannot do without the company of others."}
+{"prompt":"extraversion ->", "completion": " I do not like to draw attention to myself."}
+{"prompt":"agreeableness ->", "completion": " I listen to my brain rather than my heart."}
+{"prompt":"agreeableness ->", "completion": " I listen to my heart rather than my brain."}
+{"prompt":"conscientiousness ->", "completion": " I put little time and effort into my work."}
+{"prompt":"openness ->", "completion": " I tend to think about something for hours."}
+{"prompt":"agreeableness ->", "completion": " I feel that most people cannot be trusted."}
+{"prompt":"agreeableness ->", "completion": " I believe that people are basically moral."}
+{"prompt":"conscientiousness ->", "completion": " I am someone who tends to be disorganized."}
+{"prompt":"conscientiousness ->", "completion": " I am someone who can be somewhat careless."}
+{"prompt":"agreeableness ->", "completion": " I am someone who can be cold and uncaring."}
+{"prompt":"extraversion ->", "completion": " I maintain high energy throughout the day."}
+{"prompt":"extraversion ->", "completion": " Others perceive that I do not joke around."}
+{"prompt":"conscientiousness ->", "completion": " Others perceive that I am a perfectionist."}
+{"prompt":"extraversion ->", "completion": " Others perceive that I prefer to be alone."}
+{"prompt":"conscientiousness ->", "completion": " Others perceive that I stick to the rules."}
+{"prompt":"extraversion ->", "completion": " I can manage many things at the same time."}
+{"prompt":"openness ->", "completion": " I prefer to stick with things that I know."}
+{"prompt":"conscientiousness ->", "completion": " I do not put my mind on the task at hand."}
+{"prompt":"extraversion ->", "completion": " I rarely get caught up in the excitement."}
+{"prompt":"extraversion ->", "completion": " I lack the talent for influencing people."}
+{"prompt":"neuroticism ->", "completion": " I let others finish what they are saying."}
+{"prompt":"extraversion ->", "completion": " I often feel uncomfortable around others."}
+{"prompt":"openness ->", "completion": " I find political discussions interesting."}
+{"prompt":"agreeableness ->", "completion": " I am nice to people I should be angry at."}
+{"prompt":"extraversion ->", "completion": " I have difficulty expressing my feelings."}
+{"prompt":"extraversion ->", "completion": " I am afraid to draw attention to myself."}
+{"prompt":"openness ->", "completion": " I am not easily affected by my emotions."}
+{"prompt":"agreeableness ->", "completion": " I am deeply moved by others misfortunes."}
+{"prompt":"agreeableness ->", "completion": " I am on good terms with nearly everyone."}
+{"prompt":"neuroticism ->", "completion": " I blurt out whatever comes into my mind."}
+{"prompt":"conscientiousness ->", "completion": " I find it difficult to get down to work."}
+{"prompt":"extraversion ->", "completion": " I dislike being the center of attention."}
+{"prompt":"conscientiousness ->", "completion": " I do not finish the things that I start."}
+{"prompt":"openness ->", "completion": " I have read the great literary classics."}
+{"prompt":"openness ->", "completion": " I am considered to be kind of eccentric."}
+{"prompt":"conscientiousness ->", "completion": " I do not see the consequences of things."}
+{"prompt":"extraversion ->", "completion": " I do not have an assertive personality."}
+{"prompt":"openness ->", "completion": " I am able to find out things by myself."}
+{"prompt":"extraversion ->", "completion": " I am not afraid of providing criticism."}
+{"prompt":"openness ->", "completion": " I rarely notice my emotional reactions."}
+{"prompt":"agreeableness ->", "completion": " I believe that I am better than others."}
+{"prompt":"agreeableness ->", "completion": " I cannot be bothered with others needs."}
+{"prompt":"conscientiousness ->", "completion": " I continue until everything is perfect."}
+{"prompt":"extraversion ->", "completion": " I find it difficult to approach others."}
+{"prompt":"extraversion ->", "completion": " I am good at making impromptu speeches."}
+{"prompt":"openness ->", "completion": " I am someone who has little creativity."}
+{"prompt":"openness ->", "completion": " I am someone who values art and beauty."}
+{"prompt":"conscientiousness ->", "completion": " I stop when work becomes too difficult."}
+{"prompt":"openness ->", "completion": " I would love to explore strange places."}
+{"prompt":"conscientiousness ->", "completion": " Others perceive that I am disorganized."}
+{"prompt":"extraversion ->", "completion": " Others perceive that I am hard to read."}
+{"prompt":"extraversion ->", "completion": " I let things proceed at their own pace."}
+{"prompt":"conscientiousness ->", "completion": " I am careful to avoid making mistakes."}
+{"prompt":"agreeableness ->", "completion": " I appreciate the viewpoints of others."}
+{"prompt":"openness ->", "completion": " I ask questions that nobody else does."}
+{"prompt":"agreeableness ->", "completion": " I believe crying helps me feel better."}
+{"prompt":"extraversion ->", "completion": " I demand to be the center of interest."}
+{"prompt":"agreeableness ->", "completion": " I am sensitive to the needs of others."}
+{"prompt":"agreeableness ->", "completion": " I tend to dislike soft-hearted people."}
+{"prompt":"conscientiousness ->", "completion": " I want everything to add up perfectly."}
+{"prompt":"extraversion ->", "completion": " I make myself the center of attention."}
+{"prompt":"extraversion ->", "completion": " I am someone who is outgoing sociable."}
+{"prompt":"conscientiousness ->", "completion": " I am someone who is dependable steady."}
+{"prompt":"neuroticism ->", "completion": " I begin to panic when there is danger."}
+{"prompt":"openness ->", "completion": " I am not interested in abstract ideas."}
+{"prompt":"conscientiousness ->", "completion": " I plunge into tasks with all my heart."}
+{"prompt":"agreeableness ->", "completion": " I am not really interested in others."}
+{"prompt":"extraversion ->", "completion": " I come up with a solution right away."}
+{"prompt":"extraversion ->", "completion": " I dislike neighbors living too close."}
+{"prompt":"neuroticism ->", "completion": " I am filled with doubts about things."}
+{"prompt":"neuroticism ->", "completion": " I am not sure where my life is going."}
+{"prompt":"openness ->", "completion": " I enjoy examining myself and my life."}
+{"prompt":"conscientiousness ->", "completion": " I laugh at the slightest provocation."}
+{"prompt":"openness ->", "completion": " I look for hidden meanings in things."}
+{"prompt":"conscientiousness ->", "completion": " I never spend more than I can afford."}
+{"prompt":"neuroticism ->", "completion": " I only feel comfortable with friends."}
+{"prompt":"agreeableness ->", "completion": " I pretend to be concerned for others."}
+{"prompt":"openness ->", "completion": " I skip difficult words while reading."}
+{"prompt":"agreeableness ->", "completion": " I take others interests into account."}
+{"prompt":"neuroticism ->", "completion": " I talk even when I know I should not."}
+{"prompt":"agreeableness ->", "completion": " I value cooperation over competition."}
+{"prompt":"neuroticism ->", "completion": " I let myself be influenced by others."}
+{"prompt":"conscientiousness ->", "completion": " I get started quickly on doing a job."}
+{"prompt":"openness ->", "completion": " I do things that others find strange."}
+{"prompt":"extraversion ->", "completion": " Others perceive that I like to laugh."}
+{"prompt":"agreeableness ->", "completion": " Others perceive that I try to fit in."}
+{"prompt":"extraversion ->", "completion": " I am not a very enthusiastic person."}
+{"prompt":"extraversion ->", "completion": " I can talk others into doing things."}
+{"prompt":"openness ->", "completion": " I do not like to ponder over things."}
+{"prompt":"conscientiousness ->", "completion": " I expect dedicated work from others."}
+{"prompt":"openness ->", "completion": " I love to read challenging material."}
+{"prompt":"neuroticism ->", "completion": " I am not easily disturbed by events."}
+{"prompt":"neuroticism ->", "completion": " I feel that my life lacks direction."}
+{"prompt":"extraversion ->", "completion": " I involve others in what I am doing."}
+{"prompt":"openness ->", "completion": " I enjoy feeling close to the earth."}
+{"prompt":"neuroticism ->", "completion": " I am calm even in tense situations."}
+{"prompt":"openness ->", "completion": " I believe in the importance of art."}
+{"prompt":"openness ->", "completion": " I am attached to conventional ways."}
+{"prompt":"conscientiousness ->", "completion": " I do the opposite of what is asked."}
+{"prompt":"extraversion ->", "completion": " I enjoy being part of a loud crowd."}
+{"prompt":"agreeableness ->", "completion": " I only talk about my own interests."}
+{"prompt":"conscientiousness ->", "completion": " I tend to dislike impulsive people."}
+{"prompt":"agreeableness ->", "completion": " I try not to think about the needy."}
+{"prompt":"openness ->", "completion": " I try to stay in touch with myself."}
+{"prompt":"conscientiousness ->", "completion": " I want everything to be just right."}
+{"prompt":"conscientiousness ->", "completion": " I prefer to just let things happen."}
+{"prompt":"openness ->", "completion": " I experience my emotions intensely."}
+{"prompt":"extraversion ->", "completion": " I am someone who tends to be quiet."}
+{"prompt":"extraversion ->", "completion": " I am someone who is full of energy."}
+{"prompt":"extraversion ->", "completion": " I have an intense boisterous laugh."}
+{"prompt":"conscientiousness ->", "completion": " I push myself very hard to succeed."}
+{"prompt":"neuroticism ->", "completion": " I am not easily bothered by things."}
+{"prompt":"openness ->", "completion": " I avoid difficult reading material."}
+{"prompt":"neuroticism ->", "completion": " Others perceive that I am carefree."}
+{"prompt":"extraversion ->", "completion": " Others perceive that I seek danger."}
+{"prompt":"neuroticism ->", "completion": " Others perceive that I worry a lot."}
+{"prompt":"agreeableness ->", "completion": " I suspect hidden motives in others."}
+{"prompt":"extraversion ->", "completion": " I wait for others to lead the way."}
+{"prompt":"conscientiousness ->", "completion": " I am not as strict as I should be."}
+{"prompt":"conscientiousness ->", "completion": " I am not bothered by messy people."}
+{"prompt":"extraversion ->", "completion": " I look at the bright side of life."}
+{"prompt":"openness ->", "completion": " I avoid philosophical discussions."}
+{"prompt":"neuroticism ->", "completion": " I tend to feel the same every day."}
+{"prompt":"agreeableness ->", "completion": " I challenge others points of view."}
+{"prompt":"agreeableness ->", "completion": " I do not call people just to talk."}
+{"prompt":"agreeableness ->", "completion": " I do not get excited about things."}
+{"prompt":"openness ->", "completion": " I have a point of view all my own."}
+{"prompt":"agreeableness ->", "completion": " I inquire about others well being."}
+{"prompt":"conscientiousness ->", "completion": " I keep a sharp eye on others work."}
+{"prompt":"agreeableness ->", "completion": " I like to be of service to others."}
+{"prompt":"extraversion ->", "completion": " I need a lot of time to do things."}
+{"prompt":"conscientiousness ->", "completion": " I need things explained only once."}
+{"prompt":"conscientiousness ->", "completion": " I take good care of my belongings."}
+{"prompt":"openness ->", "completion": " I can handle a lot of information."}
+{"prompt":"openness ->", "completion": " I spend time reflecting on things."}
+{"prompt":"conscientiousness ->", "completion": " I am someone who tends to be lazy."}
+{"prompt":"neuroticism ->", "completion": " I tremble in dangerous situations."}
+{"prompt":"agreeableness ->", "completion": " I sympathize with others feelings."}
+{"prompt":"extraversion ->", "completion": " I am willing to try anything once."}
+{"prompt":"conscientiousness ->", "completion": " I have no sympathy for criminals."}
+{"prompt":"neuroticism ->", "completion": " I adapt easily to new situations."}
+{"prompt":"neuroticism ->", "completion": " I am able to control my cravings."}
+{"prompt":"neuroticism ->", "completion": " I keep my emotions under control."}
+{"prompt":"extraversion ->", "completion": " I am open about myself to others."}
+{"prompt":"openness ->", "completion": " I can easily link facts together."}
+{"prompt":"extraversion ->", "completion": " I can easily push myself forward."}
+{"prompt":"agreeableness ->", "completion": " I feel little concern for others."}
+{"prompt":"agreeableness ->", "completion": " I find it hard to forgive others."}
+{"prompt":"conscientiousness ->", "completion": " I frequently forget to do things."}
+{"prompt":"conscientiousness ->", "completion": " I have difficulty starting tasks."}
+{"prompt":"openness ->", "completion": " I know how to apply my knowledge."}
+{"prompt":"conscientiousness ->", "completion": " I make well-considered decisions."}
+{"prompt":"conscientiousness ->", "completion": " I purchase only practical things."}
+{"prompt":"openness ->", "completion": " I quickly get the idea of things."}
+{"prompt":"agreeableness ->", "completion": " I tell tall stories about myself."}
+{"prompt":"openness ->", "completion": " I try to do too difficult things."}
+{"prompt":"neuroticism ->", "completion": " I am someone who often feels sad."}
+{"prompt":"extraversion ->", "completion": " I rarely enjoy being with people."}
+{"prompt":"openness ->", "completion": " I do not know much about history."}
+{"prompt":"conscientiousness ->", "completion": " Others perceive that I work hard."}
+{"prompt":"openness ->", "completion": " I do not have a good imagination."}
+{"prompt":"neuroticism ->", "completion": " I am able to stand up for myself."}
+{"prompt":"openness ->", "completion": " I do not like the idea of change."}
+{"prompt":"agreeableness ->", "completion": " I make people feel uncomfortable."}
+{"prompt":"openness ->", "completion": " I cannot come up with new ideas."}
+{"prompt":"extraversion ->", "completion": " I let others make the decisions."}
+{"prompt":"agreeableness ->", "completion": " I criticize others shortcomings."}
+{"prompt":"conscientiousness ->", "completion": " I do not think laws apply to me."}
+{"prompt":"extraversion ->", "completion": " I enjoy spending time by myself."}
+{"prompt":"openness ->", "completion": " I enjoy wild flights of fantasy."}
+{"prompt":"agreeableness ->", "completion": " I have a good word for everyone."}
+{"prompt":"openness ->", "completion": " I need to understand my motives."}
+{"prompt":"agreeableness ->", "completion": " I remember my friends birthdays."}
+{"prompt":"agreeableness ->", "completion": " I respect the privacy of others."}
+{"prompt":"conscientiousness ->", "completion": " I would never cheat on my taxes."}
+{"prompt":"agreeableness ->", "completion": " I am annoyed by others mistakes."}
+{"prompt":"agreeableness ->", "completion": " I am inclined to forgive others."}
+{"prompt":"openness ->", "completion": " I want to increase my knowledge."}
+{"prompt":"agreeableness ->", "completion": " I rarely feel angry with people."}
+{"prompt":"openness ->", "completion": " I am quick to understand things."}
+{"prompt":"conscientiousness ->", "completion": " I do things in a halfway manner."}
+{"prompt":"conscientiousness ->", "completion": " I do just enough work to get by."}
+{"prompt":"agreeableness ->", "completion": " I have a high opinion of myself."}
+{"prompt":"openness ->", "completion": " I get deeply immersed in music."}
+{"prompt":"agreeableness ->", "completion": " I act at the expense of others."}
+{"prompt":"agreeableness ->", "completion": " I believe in an eye for an eye."}
+{"prompt":"extraversion ->", "completion": " I dislike talking about myself."}
+{"prompt":"conscientiousness ->", "completion": " I do things at the last minute."}
+{"prompt":"conscientiousness ->", "completion": " I do things in a logical order."}
+{"prompt":"conscientiousness ->", "completion": " I follow through with my plans."}
+{"prompt":"extraversion ->", "completion": " I know how to captivate people."}
+{"prompt":"agreeableness ->", "completion": " I like to do things for others."}
+{"prompt":"neuroticism ->", "completion": " I get caught up in my problems."}
+{"prompt":"conscientiousness ->", "completion": " I often make last-minute plans."}
+{"prompt":"agreeableness ->", "completion": " I overestimate my achievements."}
+{"prompt":"agreeableness ->", "completion": " I sympathize with the homeless."}
+{"prompt":"neuroticism ->", "completion": " I rarely cry during sad movies."}
+{"prompt":"extraversion ->", "completion": " I am never at a loss for words."}
+{"prompt":"neuroticism ->", "completion": " I feel comfortable with myself."}
+{"prompt":"neuroticism ->", "completion": " I have a low opinion of myself."}
+{"prompt":"openness ->", "completion": " I am interested in many things."}
+{"prompt":"openness ->", "completion": " I believe in one true religion."}
+{"prompt":"conscientiousness ->", "completion": " I always know what I am doing."}
+{"prompt":"extraversion ->", "completion": " I see myself as a good leader."}
+{"prompt":"extraversion ->", "completion": " I act comfortably with others."}
+{"prompt":"conscientiousness ->", "completion": " I am not bothered by disorder."}
+{"prompt":"neuroticism ->", "completion": " I can handle complex problems."}
+{"prompt":"agreeableness ->", "completion": " I cannot stand confrontations."}
+{"prompt":"agreeableness ->", "completion": " I comment loudly about others."}
+{"prompt":"conscientiousness ->", "completion": " I complete tasks successfully."}
+{"prompt":"conscientiousness ->", "completion": " I demand perfection in others."}
+{"prompt":"agreeableness ->", "completion": " I do not fall for sob stories."}
+{"prompt":"openness ->", "completion": " I enjoy thinking about things."}
+{"prompt":"agreeableness ->", "completion": " I go out of my way for others."}
+{"prompt":"conscientiousness ->", "completion": " I let my attention wander off."}
+{"prompt":"extraversion ->", "completion": " I let myself be pushed around."}
+{"prompt":"conscientiousness ->", "completion": " I see that rules are observed."}
+{"prompt":"openness ->", "completion": " I seek explanations of things."}
+{"prompt":"agreeableness ->", "completion": " I will do anything for others."}
+{"prompt":"conscientiousness ->", "completion": " I work according to a routine."}
+{"prompt":"neuroticism ->", "completion": " I get overwhelmed by emotions."}
+{"prompt":"openness ->", "completion": " I spend a lot of time reading."}
+{"prompt":"neuroticism ->", "completion": " I am someone who can be tense."}
+{"prompt":"extraversion ->", "completion": " I am someone who is talkative."}
+{"prompt":"agreeableness ->", "completion": " I react strongly to criticism."}
+{"prompt":"agreeableness ->", "completion": " I am usually a patient person."}
+{"prompt":"neuroticism ->", "completion": " I am relaxed most of the time."}
+{"prompt":"openness ->", "completion": " I try to avoid complex people."}
+{"prompt":"neuroticism ->", "completion": " I am very pleased with myself."}
+{"prompt":"extraversion ->", "completion": " I enjoy being part of a group."}
+{"prompt":"agreeableness ->", "completion": " I think that all will be well."}
+{"prompt":"conscientiousness ->", "completion": " I come up with good solutions."}
+{"prompt":"conscientiousness ->", "completion": " I know how to get things done."}
+{"prompt":"extraversion ->", "completion": " I get along well with others."}
+{"prompt":"conscientiousness ->", "completion": " I accomplish my work on time."}
+{"prompt":"neuroticism ->", "completion": " I remain calm under pressure."}
+{"prompt":"extraversion ->", "completion": " I avoid contacts with others."}
+{"prompt":"openness ->", "completion": " I catch on to things quickly."}
+{"prompt":"conscientiousness ->", "completion": " I come straight to the point."}
+{"prompt":"openness ->", "completion": " I enjoy the beauty of nature."}
+{"prompt":"conscientiousness ->", "completion": " I get a head start on others."}
+{"prompt":"conscientiousness ->", "completion": " I keep my checkbook balanced."}
+{"prompt":"agreeableness ->", "completion": " I know how to comfort others."}
+{"prompt":"conscientiousness ->", "completion": " I leave my belongings around."}
+{"prompt":"openness ->", "completion": " I quickly think up new ideas."}
+{"prompt":"extraversion ->", "completion": " I reveal little about myself."}
+{"prompt":"openness ->", "completion": " I seldom get lost in thought."}
+{"prompt":"agreeableness ->", "completion": " I use others for my own ends."}
+{"prompt":"openness ->", "completion": " I show a mastery of language."}
+{"prompt":"agreeableness ->", "completion": " I suffer from others sorrows."}
+{"prompt":"agreeableness ->", "completion": " I think too highly of myself."}
+{"prompt":"neuroticism ->", "completion": " I wear my heart on my sleeve."}
+{"prompt":"conscientiousness ->", "completion": " I need a push to get started."}
+{"prompt":"extraversion ->", "completion": " I do not like crowded events."}
+{"prompt":"openness ->", "completion": " I come up with something new."}
+{"prompt":"neuroticism ->", "completion": " I am often down in the dumps."}
+{"prompt":"agreeableness ->", "completion": " I find fault with everything."}
+{"prompt":"openness ->", "completion": " I can say things beautifully."}
+{"prompt":"openness ->", "completion": " I am passionate about causes."}
+{"prompt":"conscientiousness ->", "completion": " I get others to do my duties."}
+{"prompt":"extraversion ->", "completion": " I automatically take charge."}
+{"prompt":"agreeableness ->", "completion": " I accept people as they are."}
+{"prompt":"neuroticism ->", "completion": " I easily resist temptations."}
+{"prompt":"neuroticism ->", "completion": " I am not embarrassed easily."}
+{"prompt":"extraversion ->", "completion": " I do a lot in my spare time."}
+{"prompt":"conscientiousness ->", "completion": " I do not see things through."}
+{"prompt":"neuroticism ->", "completion": " I barge in on conversations."}
+{"prompt":"extraversion ->", "completion": " I keep others at a distance."}
+{"prompt":"extraversion ->", "completion": " I laugh my way through life."}
+{"prompt":"openness ->", "completion": " I live in a world of my own."}
+{"prompt":"agreeableness ->", "completion": " I look down on any weakness."}
+{"prompt":"openness ->", "completion": " I prefer variety to routine."}
+{"prompt":"conscientiousness ->", "completion": " I love order and regularity."}
+{"prompt":"openness ->", "completion": " I think deeply about things."}
+{"prompt":"agreeableness ->", "completion": " I treat people as inferiors."}
+{"prompt":"extraversion ->", "completion": " I warm up quickly to others."}
+{"prompt":"openness ->", "completion": " I love to reflect on things."}
+{"prompt":"extraversion ->", "completion": " I like to attract attention."}
+{"prompt":"agreeableness ->", "completion": " I try to forgive and forget."}
+{"prompt":"extraversion ->", "completion": " I have leadership abilities."}
+{"prompt":"agreeableness ->", "completion": " I am concerned about others."}
+{"prompt":"extraversion ->", "completion": " I am open about my feelings."}
+{"prompt":"neuroticism ->", "completion": " I have frequent mood swings."}
+{"prompt":"agreeableness ->", "completion": " I put people under pressure."}
+{"prompt":"neuroticism ->", "completion": " I readily overcome setbacks."}
+{"prompt":"agreeableness ->", "completion": " I use flattery to get ahead."}
+{"prompt":"conscientiousness ->", "completion": " I have little to contribute."}
+{"prompt":"conscientiousness ->", "completion": " I choose my words with care."}
+{"prompt":"agreeableness ->", "completion": " I demand a lot from others."}
+{"prompt":"extraversion ->", "completion": " I am the life of the party."}
+{"prompt":"conscientiousness ->", "completion": " I seldom stretch the truth."}
+{"prompt":"extraversion ->", "completion": " I am a very private person."}
+{"prompt":"neuroticism ->", "completion": " I am not easily frustrated."}
+{"prompt":"conscientiousness ->", "completion": " I am not easily distracted."}
+{"prompt":"agreeableness ->", "completion": " I am quick to judge others."}
+{"prompt":"extraversion ->", "completion": " I can take strong measures."}
+{"prompt":"openness ->", "completion": " I cannot stand being alone."}
+{"prompt":"agreeableness ->", "completion": " I am easily moved to tears."}
+{"prompt":"openness ->", "completion": " I do things at my own pace."}
+{"prompt":"extraversion ->", "completion": " I do not mind eating alone."}
+{"prompt":"conscientiousness ->", "completion": " I do not understand things."}
+{"prompt":"neuroticism ->", "completion": " I am swayed by my emotions."}
+{"prompt":"neuroticism ->", "completion": " I can be stirred up easily."}
+{"prompt":"agreeableness ->", "completion": " I impose my will on others."}
+{"prompt":"neuroticism ->", "completion": " I do things I later regret."}
+{"prompt":"neuroticism ->", "completion": " I feel crushed by setbacks."}
+{"prompt":"agreeableness ->", "completion": " I make people feel welcome."}
+{"prompt":"conscientiousness ->", "completion": " I say inappropriate things."}
+{"prompt":"agreeableness ->", "completion": " I take time out for others."}
+{"prompt":"conscientiousness ->", "completion": " I work on improving myself."}
+{"prompt":"openness ->", "completion": " I try to understand myself."}
+{"prompt":"openness ->", "completion": " I love to learn new things."}
+{"prompt":"neuroticism ->", "completion": " I am willing to take risks."}
+{"prompt":"openness ->", "completion": " I am interested in science."}
+{"prompt":"openness ->", "completion": " I enjoy intellectual games."}
+{"prompt":"agreeableness ->", "completion": " I make people feel at ease."}
+{"prompt":"conscientiousness ->", "completion": " I pay attention to details."}
+{"prompt":"agreeableness ->", "completion": " I take advantage of others."}
+{"prompt":"neuroticism ->", "completion": " I take things as they come."}
+{"prompt":"extraversion ->", "completion": " I feel at ease with people."}
+{"prompt":"openness ->", "completion": " I get excited by new ideas."}
+{"prompt":"openness ->", "completion": " I have a vivid imagination."}
+{"prompt":"extraversion ->", "completion": " I seek to influence others."}
+{"prompt":"openness ->", "completion": " I like to visit new places."}
+{"prompt":"openness ->", "completion": " I like to begin new things."}
+{"prompt":"conscientiousness ->", "completion": " I go straight for the goal."}
+{"prompt":"neuroticism ->", "completion": " I am afraid of many things."}
+{"prompt":"openness ->", "completion": " I formulate ideas clearly."}
+{"prompt":"agreeableness ->", "completion": " I am interested in people."}
+{"prompt":"conscientiousness ->", "completion": " I appreciate good manners."}
+{"prompt":"conscientiousness ->", "completion": " I do not care about rules."}
+{"prompt":"agreeableness ->", "completion": " I do not have a soft side."}
+{"prompt":"agreeableness ->", "completion": " I like harmony in my life."}
+{"prompt":"agreeableness ->", "completion": " I listen to my conscience."}
+{"prompt":"agreeableness ->", "completion": " I respect others feelings."}
+{"prompt":"agreeableness ->", "completion": " I take no time for others."}
+{"prompt":"conscientiousness ->", "completion": " I turn plans into actions."}
+{"prompt":"neuroticism ->", "completion": " I want things done my way."}
+{"prompt":"conscientiousness ->", "completion": " I leave a mess in my room."}
+{"prompt":"openness ->", "completion": " I rebel against authority."}
+{"prompt":"neuroticism ->", "completion": " I face danger confidently."}
+{"prompt":"neuroticism ->", "completion": " I get stressed out easily."}
+{"prompt":"openness ->", "completion": " I enjoy hearing new ideas."}
+{"prompt":"conscientiousness ->", "completion": " I leave things unfinished."}
+{"prompt":"openness ->", "completion": " I indulge in my fantasies."}
+{"prompt":"agreeableness ->", "completion": " I seldom toot my own horn."}
+{"prompt":"conscientiousness ->", "completion": " I stick to my chosen path."}
+{"prompt":"openness ->", "completion": " I am a creature of habit."}
+{"prompt":"conscientiousness ->", "completion": " I am exacting in my work."}
+{"prompt":"conscientiousness ->", "completion": " I am good at many things."}
+{"prompt":"extraversion ->", "completion": " I am hard to get to know."}
+{"prompt":"agreeableness ->", "completion": " I believe only in myself."}
+{"prompt":"agreeableness ->", "completion": " I boast about my virtues."}
+{"prompt":"neuroticism ->", "completion": " I cannot make up my mind."}
+{"prompt":"extraversion ->", "completion": " I do most of the talking."}
+{"prompt":"neuroticism ->", "completion": " I am often in a bad mood."}
+{"prompt":"openness ->", "completion": " I have a poor vocabulary."}
+{"prompt":"conscientiousness ->", "completion": " I let people pull my leg."}
+{"prompt":"agreeableness ->", "completion": " I make demands on others."}
+{"prompt":"openness ->", "completion": " I need a creative outlet."}
+{"prompt":"conscientiousness ->", "completion": " I take tasks too lightly."}
+{"prompt":"openness ->", "completion": " I tend to analyze things."}
+{"prompt":"agreeableness ->", "completion": " I turn my back on others."}
+{"prompt":"agreeableness ->", "completion": " I am hard to reason with."}
+{"prompt":"conscientiousness ->", "completion": " I make careless mistakes."}
+{"prompt":"extraversion ->", "completion": " I keep in the background."}
+{"prompt":"extraversion ->", "completion": " I take control of things."}
+{"prompt":"conscientiousness ->", "completion": " I misrepresent the facts."}
+{"prompt":"neuroticism ->", "completion": " I rarely feel depressed."}
+{"prompt":"openness ->", "completion": " I make beautiful things."}
+{"prompt":"neuroticism ->", "completion": " I am not easily stirred."}
+{"prompt":"conscientiousness ->", "completion": " I am often late to work."}
+{"prompt":"extraversion ->", "completion": " I bottle up my feelings."}
+{"prompt":"neuroticism ->", "completion": " I am guided by my moods."}
+{"prompt":"extraversion ->", "completion": " I express childlike joy."}
+{"prompt":"conscientiousness ->", "completion": " I handle tasks smoothly."}
+{"prompt":"conscientiousness ->", "completion": " I like to act on a whim."}
+{"prompt":"agreeableness ->", "completion": " I like to please others."}
+{"prompt":"openness ->", "completion": " I love beautiful things."}
+{"prompt":"conscientiousness ->", "completion": " I make a mess of things."}
+{"prompt":"agreeableness ->", "completion": " I make others feel good."}
+{"prompt":"agreeableness ->", "completion": " I play tricks on others."}
+{"prompt":"conscientiousness ->", "completion": " I return borrowed items."}
+{"prompt":"agreeableness ->", "completion": " I scheme against others."}
+{"prompt":"conscientiousness ->", "completion": " I seldom notice details."}
+{"prompt":"agreeableness ->", "completion": " I trust what people say."}
+{"prompt":"neuroticism ->", "completion": " I am not easily annoyed."}
+{"prompt":"extraversion ->", "completion": " I want to be left alone."}
+{"prompt":"extraversion ->", "completion": " I express myself easily."}
+{"prompt":"openness ->", "completion": " I do not like to travel."}
+{"prompt":"conscientiousness ->", "completion": " I make a fool of myself."}
+{"prompt":"conscientiousness ->", "completion": " I do things by the book."}
+{"prompt":"extraversion ->", "completion": " I hold back my opinions."}
+{"prompt":"neuroticism ->", "completion": " I am easily intimidated."}
+{"prompt":"neuroticism ->", "completion": " I stumble over my words."}
+{"prompt":"extraversion ->", "completion": " I love surprise parties."}
+{"prompt":"agreeableness ->", "completion": " I obstruct others plans."}
+{"prompt":"neuroticism ->", "completion": " I am easily discouraged."}
+{"prompt":"conscientiousness ->", "completion": " I am easily distracted."}
+{"prompt":"conscientiousness ->", "completion": " I am sure of my ground."}
+{"prompt":"extraversion ->", "completion": " I dare to say anything."}
+{"prompt":"neuroticism ->", "completion": " I am easily frightened."}
+{"prompt":"openness ->", "completion": " I do not like concerts."}
+{"prompt":"conscientiousness ->", "completion": " I do not pay attention."}
+{"prompt":"extraversion ->", "completion": " I enjoy being reckless."}
+{"prompt":"neuroticism ->", "completion": " I change my mood a lot."}
+{"prompt":"conscientiousness ->", "completion": " I leave my work undone."}
+{"prompt":"extraversion ->", "completion": " I like to amuse others."}
+{"prompt":"openness ->", "completion": " I love children movies."}
+{"prompt":"agreeableness ->", "completion": " I would not harm a fly."}
+{"prompt":"neuroticism ->", "completion": " I rarely get irritated."}
+{"prompt":"agreeableness ->", "completion": " I get even with others."}
+{"prompt":"agreeableness ->", "completion": " I feel others emotions."}
+{"prompt":"openness ->", "completion": " I have excellent ideas."}
+{"prompt":"neuroticism ->", "completion": " I get irritated easily."}
+{"prompt":"neuroticism ->", "completion": " I grumble about things."}
+{"prompt":"agreeableness ->", "completion": " I cut others to pieces."}
+{"prompt":"extraversion ->", "completion": " I like to take it easy."}
+{"prompt":"extraversion ->", "completion": " I like to take my time."}
+{"prompt":"extraversion ->", "completion": " I am not easily amused."}
+{"prompt":"conscientiousness ->", "completion": " I pay my bills on time."}
+{"prompt":"openness ->", "completion": " I learn things slowly."}
+{"prompt":"extraversion ->", "completion": " I am the first to act."}
+{"prompt":"neuroticism ->", "completion": " I can stand criticism."}
+{"prompt":"neuroticism ->", "completion": " I do not lose my head."}
+{"prompt":"extraversion ->", "completion": " I amuse myself easily."}
+{"prompt":"neuroticism ->", "completion": " I am easily disturbed."}
+{"prompt":"openness ->", "completion": " I enjoy contemplation."}
+{"prompt":"conscientiousness ->", "completion": " I finish what I start."}
+{"prompt":"conscientiousness ->", "completion": " I get to work at once."}
+{"prompt":"extraversion ->", "completion": " I make a lot of noise."}
+{"prompt":"conscientiousness ->", "completion": " I make rash decisions."}
+{"prompt":"extraversion ->", "completion": " I retreat from others."}
+{"prompt":"agreeableness ->", "completion": " I sense others wishes."}
+{"prompt":"extraversion ->", "completion": " I start conversations."}
+{"prompt":"extraversion ->", "completion": " I stick up for myself."}
+{"prompt":"neuroticism ->", "completion": " I take offense easily."}
+{"prompt":"agreeableness ->", "completion": " I try to outdo others."}
+{"prompt":"openness ->", "completion": " I use difficult words."}
+{"prompt":"openness ->", "completion": " I dislike the unknown."}
+{"prompt":"agreeableness ->", "completion": " I speak ill of others."}
+{"prompt":"agreeableness ->", "completion": " I am hard to convince."}
+{"prompt":"extraversion ->", "completion": " I make friends easily."}
+{"prompt":"agreeableness ->", "completion": " I love to help others."}
+{"prompt":"agreeableness ->", "completion": " I have a sharp tongue."}
+{"prompt":"extraversion ->", "completion": " I am always on the go."}
+{"prompt":"agreeableness ->", "completion": " I look down on others."}
+{"prompt":"conscientiousness ->", "completion": " I misjudge situations."}
+{"prompt":"neuroticism ->", "completion": " I get easily agitated."}
+{"prompt":"extraversion ->", "completion": " I try to lead others."}
+{"prompt":"conscientiousness ->", "completion": " I am always prepared."}
+{"prompt":"agreeableness ->", "completion": " I am easy to satisfy."}
+{"prompt":"neuroticism ->", "completion": " I rarely overindulge."}
+{"prompt":"conscientiousness ->", "completion": " I carry out my plans."}
+{"prompt":"neuroticism ->", "completion": " I am easily confused."}
+{"prompt":"conscientiousness ->", "completion": " I do improper things."}
+{"prompt":"openness ->", "completion": " I do not like poetry."}
+{"prompt":"neuroticism ->", "completion": " I am easily offended."}
+{"prompt":"conscientiousness ->", "completion": " I excel in what I do."}
+{"prompt":"neuroticism ->", "completion": " I cannot concentrate."}
+{"prompt":"agreeableness ->", "completion": " I hate to seem pushy."}
+{"prompt":"conscientiousness ->", "completion": " I like to plan ahead."}
+{"prompt":"extraversion ->", "completion": " I love large parties."}
+{"prompt":"neuroticism ->", "completion": " I get out of control."}
+{"prompt":"extraversion ->", "completion": " I never stop talking."}
+{"prompt":"extraversion ->", "completion": " I prefer to be alone."}
+{"prompt":"extraversion ->", "completion": " I seldom joke around."}
+{"prompt":"agreeableness ->", "completion": " I cheat to get ahead."}
+{"prompt":"conscientiousness ->", "completion": " I stick to the rules."}
+{"prompt":"neuroticism ->", "completion": " I shoot my mouth off."}
+{"prompt":"neuroticism ->", "completion": " I fear for the worst."}
+{"prompt":"extraversion ->", "completion": " I have great stamina."}
+{"prompt":"conscientiousness ->", "completion": " I do too little work."}
+{"prompt":"extraversion ->", "completion": " I act wild and crazy."}
+{"prompt":"agreeableness ->", "completion": " I get back at others."}
+{"prompt":"neuroticism ->", "completion": " I often eat too much."}
+{"prompt":"extraversion ->", "completion": " I dislike loud music."}
+{"prompt":"agreeableness ->", "completion": " I contradict others."}
+{"prompt":"neuroticism ->", "completion": " I am easily excited."}
+{"prompt":"conscientiousness ->", "completion": " I do not plan ahead."}
+{"prompt":"agreeableness ->", "completion": " I enjoy crude jokes."}
+{"prompt":"conscientiousness ->", "completion": " I follow a schedule."}
+{"prompt":"agreeableness ->", "completion": " I follow directions."}
+{"prompt":"neuroticism ->", "completion": " I cry during movies."}
+{"prompt":"extraversion ->", "completion": " I have a lot of fun."}
+{"prompt":"extraversion ->", "completion": " I joke around a lot."}
+{"prompt":"openness ->", "completion": " I look at the facts."}
+{"prompt":"agreeableness ->", "completion": " I love a good fight."}
+{"prompt":"neuroticism ->", "completion": " I often make a fuss."}
+{"prompt":"agreeableness ->", "completion": " I show my gratitude."}
+{"prompt":"conscientiousness ->", "completion": " I neglect my duties."}
+{"prompt":"openness ->", "completion": " I am open to change."}
+{"prompt":"agreeableness ->", "completion": " I am easily annoyed."}
+{"prompt":"extraversion ->", "completion": " I do not talk a lot."}
+{"prompt":"agreeableness ->", "completion": " I have a soft heart."}
+{"prompt":"openness ->", "completion": " I dislike new foods."}
+{"prompt":"agreeableness ->", "completion": " I am wary of others."}
+{"prompt":"conscientiousness ->", "completion": " I break my promises."}
+{"prompt":"conscientiousness ->", "completion": " I keep things tidy."}
+{"prompt":"neuroticism ->", "completion": " I know how to cope."}
+{"prompt":"agreeableness ->", "completion": " I cherish mementos."}
+{"prompt":"openness ->", "completion": " I dislike learning."}
+{"prompt":"extraversion ->", "completion": " I enjoy my privacy."}
+{"prompt":"neuroticism ->", "completion": " I burst into tears."}
+{"prompt":"neuroticism ->", "completion": " I demand obedience."}
+{"prompt":"extraversion ->", "completion": " I know what I want."}
+{"prompt":"extraversion ->", "completion": " I like to be alone."}
+{"prompt":"conscientiousness ->", "completion": " I oppose authority."}
+{"prompt":"neuroticism ->", "completion": " I get upset easily."}
+{"prompt":"neuroticism ->", "completion": " I have crying fits."}
+{"prompt":"conscientiousness ->", "completion": " I reason logically."}
+{"prompt":"agreeableness ->", "completion": " I show my feelings."}
+{"prompt":"extraversion ->", "completion": " I wait for my turn."}
+{"prompt":"openness ->", "completion": " I am full of ideas."}
+{"prompt":"extraversion ->", "completion": " I tire out quickly."}
+{"prompt":"neuroticism ->", "completion": " I seldom feel blue."}
+{"prompt":"extraversion ->", "completion": " I amuse my friends."}
+{"prompt":"openness ->", "completion": " I love to daydream."}
+{"prompt":"conscientiousness ->", "completion": " I keep my promises."}
+{"prompt":"conscientiousness ->", "completion": " I rush into things."}
+{"prompt":"conscientiousness ->", "completion": " I behave properly."}
+{"prompt":"conscientiousness ->", "completion": " I detect mistakes."}
+{"prompt":"conscientiousness ->", "completion": " I dislike routine."}
+{"prompt":"conscientiousness ->", "completion": " I disregard rules."}
+{"prompt":"openness ->", "completion": " I do not like art."}
+{"prompt":"agreeableness ->", "completion": " I reassure others."}
+{"prompt":"openness ->", "completion": " I seldom daydream."}
+{"prompt":"conscientiousness ->", "completion": " I shirk my duties."}
+{"prompt":"neuroticism ->", "completion": " I react intensely."}
+{"prompt":"agreeableness ->", "completion": " I love my enemies."}
+{"prompt":"conscientiousness ->", "completion": " I do crazy things."}
+{"prompt":"neuroticism ->", "completion": " I often feel blue."}
+{"prompt":"extraversion ->", "completion": " I love excitement."}
+{"prompt":"openness ->", "completion": " I dislike changes."}
+{"prompt":"agreeableness ->", "completion": " I distrust people."}
+{"prompt":"extraversion ->", "completion": " I am always busy."}
+{"prompt":"neuroticism ->", "completion": " I am easily hurt."}
+{"prompt":"conscientiousness ->", "completion": " I demand quality."}
+{"prompt":"conscientiousness ->", "completion": " I give up easily."}
+{"prompt":"extraversion ->", "completion": " I know no limits."}
+{"prompt":"conscientiousness ->", "completion": " I mess things up."}
+{"prompt":"neuroticism ->", "completion": " I like to gossip."}
+{"prompt":"agreeableness ->", "completion": " I respect others."}
+{"prompt":"neuroticism ->", "completion": " I lose my temper."}
+{"prompt":"neuroticism ->", "completion": " I snap at people."}
+{"prompt":"neuroticism ->", "completion": " I seldom get mad."}
+{"prompt":"neuroticism ->", "completion": " I dislike myself."}
+{"prompt":"neuroticism ->", "completion": " I feel desperate."}
+{"prompt":"extraversion ->", "completion": " I seek adventure."}
+{"prompt":"agreeableness ->", "completion": " I yell at people."}
+{"prompt":"conscientiousness ->", "completion": " I tell the truth."}
+{"prompt":"conscientiousness ->", "completion": " I avoid mistakes."}
+{"prompt":"extraversion ->", "completion": " I enjoy silence."}
+{"prompt":"openness ->", "completion": " I learn quickly."}
+{"prompt":"extraversion ->", "completion": " I let myself go."}
+{"prompt":"conscientiousness ->", "completion": " I never splurge."}
+{"prompt":"agreeableness ->", "completion": " I seek conflict."}
+{"prompt":"extraversion ->", "completion": " I talk too much."}
+{"prompt":"conscientiousness ->", "completion": " I waste my time."}
+{"prompt":"openness ->", "completion": " I think quickly."}
+{"prompt":"agreeableness ->", "completion": " I adjust easily."}
+{"prompt":"agreeableness ->", "completion": " I insult people."}
+{"prompt":"agreeableness ->", "completion": " I hold a grudge."}
+{"prompt":"extraversion ->", "completion": " I react quickly."}
+{"prompt":"neuroticism ->", "completion": " I keep my cool."}
+{"prompt":"openness ->", "completion": " I love flowers."}
+{"prompt":"agreeableness ->", "completion": " I make enemies."}
+{"prompt":"extraversion ->", "completion": " I speak loudly."}
+{"prompt":"agreeableness ->", "completion": " I trust others."}
+{"prompt":"neuroticism ->", "completion": " I panic easily."}
+{"prompt":"openness ->", "completion": " I like to read."}
+{"prompt":"neuroticism ->", "completion": " I rarely worry."}
+{"prompt":"extraversion ->", "completion": " I love to chat."}
+{"prompt":"extraversion ->", "completion": " I speak softly."}
+{"prompt":"openness ->", "completion": " I use my brain."}
+{"prompt":"neuroticism ->", "completion": " I go on binges."}
+{"prompt":"extraversion ->", "completion": " I avoid crowds."}
+{"prompt":"extraversion ->", "completion": " I react slowly."}
+{"prompt":"extraversion ->", "completion": " I laugh a lot."}
+{"prompt":"neuroticism ->", "completion": " I get furious."}
+{"prompt":"extraversion ->", "completion": " I radiate joy."}
+{"prompt":"conscientiousness ->", "completion": " I think ahead."}
+{"prompt":"extraversion ->", "completion": " I laugh aloud."}
+{"prompt":"extraversion ->", "completion": " I smile a lot."}
+{"prompt":"conscientiousness ->", "completion": " I break rules."}
+{"prompt":"extraversion ->", "completion": " I take charge."}
+{"prompt":"neuroticism ->", "completion": " I love to eat."}
+{"prompt":"extraversion ->", "completion": " I love action."}
+{"prompt":"agreeableness ->", "completion": " I cry easily."}
+{"prompt":"openness ->", "completion": " I like music."}
+{"prompt":"extraversion ->", "completion": " I seek quiet."}
+{"prompt":"extraversion ->", "completion": " I talk a lot."}
+{"prompt":"extraversion ->", "completion": " I say little."}
+{"prompt":"conscientiousness ->", "completion": " I like order."}
