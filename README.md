@@ -12,7 +12,26 @@ the top left corner.
 
 ![dl\_button](figs/repo/button.JPG)
 
-# Downloading Code and Data
+## Scale Development Illustrations
+
+Here is the list of tutorials described in our research:
+- Most example use `Python` though some `R` utilities are provided
+- Data can be found in the `data/` folder of this repository.
+- links to **Colab notebooks** to walk through the scripts and run them easily,
+<!--
+Coming soon!
+- links to **Cloud deployments** to be able to deploy large-scale trainings in the Cloud with little to no setup.
+-->
+
+| Task | Datasets Used | Colab Link
+|---|:---:|:---:|
+| [**Automated Item Generation**](https://anonymous.4open.science/r/nlp-personality-scales-orm/vignettes/automated-item-generation/automated-item-generation-with-transformers.md) | `aig-item-data.csv` |![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XbVgv15pRsaaVHyV19ON9wRdx19PxgU7?usp=sharing)
+| [**Creating Custom Sentence Embeddings**](https://anonymous.4open.science/r/nlp-personality-scales-orm/vignettes/content-analysis/create_custom_sentence_embeddings.md) | `item-data.csv` |![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/14DpmE8PiT7f-7JQwQ3cLJCqF4QUUWT97?usp=sharing)
+| [**Fine-Tuning Transformers for Classification**](https://anonymous.4open.science/r/nlp-personality-scales-orm/vignettes/content-analysis/fine_tuning_transformers_for_classification.md) | -`fine-tuned-train-data.csv` -`fine-tuned-test-data.csv`  |![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dNMJ2BuRu2l3JZq1TH0B2Fp6_WEoThXB?usp=sharing)
+| [**Automated Item Generation**](https://anonymous.4open.science/r/nlp-personality-scales-orm/vignettes/content-analysis/classification_with_pretrained_embeddings.md) | -`aggregate-word-embedding-data.csv` -`sentence-SBERT-embedding-data.csv` -`sentence-USE-embedding-data.csv` |
+
+
+## Downloading Code and Data
 
 ### Manual Download
 

@@ -313,7 +313,7 @@ intuitive way is to upload a local `.csv` file. You can do this by:
     `.csv`,`.tsv`)
 
 For this example, I’ve imported a file named `fine-tuned-train-data.csv`
-(found on our GitHub repo in the directory `/raw-data/`)
+(found on our GitHub repo in the directory `/data/content-analysis/`)
 
 ``` python
 #@title Importing custom training dataset
