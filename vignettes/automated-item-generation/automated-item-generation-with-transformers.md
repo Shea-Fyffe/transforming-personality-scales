@@ -35,9 +35,48 @@ installed by using the code below.
 #### Import Libraries
 
 ``` python
-import os
 import openai
+import os
+import json # for parsing
 import math # for ceiling
+```
+
+#### Import Functions
+
+Here we define a user-defined function `extract_completion()` to extract our response from `GPT-3`'s API. Additionally, we provide the `write_text_to_file()` function that will output the completion to a temporary text file.
+
+``` python
+# Get GPT-3's Completion Reponse
+def extract_completion(resp, split_char: str = ""):
+  """Extract GPT-3's API Completion
+  
+  Args:
+    resp: a response from openai.Completion.create()
+    split_char: a character to split completion by (optional)
+  """
+    if "choices" not in resp.keys():
+        return ""
+    comp = resp["choices"][0]["text"]
+    if split_char is "":
+        return comp
+    return comp.split(split_char)
+
+# write text to file
+def write_text_to_file(txt, output_file = "gpt-3-completion.txt", pad = None):
+  """Write List of Strings to File
+  
+  Args:
+    txt: a list of strings
+    output_file: file name to save list of strings to
+    pad: string to be placed between lines (optional)
+  """
+    with open(output_file, "w", encoding="utf-8") as f:
+        for l in txt:
+            if pad is None:
+                f.write("{}\n".format(l))
+            else:
+                f.write("{}\n{}\n".format(l, pad))
+    print(f"file output to {os.getcwd()}")
 ```
 
 ##### Enter API Key
@@ -51,14 +90,14 @@ openai.api_key = "<INSERT API KEY HERE>"
 
 ------------------------------------------------------------------------
 
-### Fine-Tune GPT-3 Using Prompt Engineering
+## Fine-Tune GPT-3 Using Prompt Engineering
 
 ------------------------------------------------------------------------
 
 *Prompt engineering* allows us to give GPT-3 a few examples which we can
 pass as a string.
 
-#### Creating Custom Prompt
+### Creating Custom Prompt
 
 We can first make a tempate then we will ask for different items of
 different traits by adding two variables: `aig_trait` and
@@ -80,32 +119,32 @@ custom_prompt = f"Objective: This program generates items that measure Big Five 
 
 Here is what our custom prompt now looks like:
 
-    ## Objective: This program generates items that measure Big Five personality traits.
-    ## 
-    ## trait: neuroticism
-    ## number of items to generate: 6
-    ## 1. I dislike myself .
-    ## 2. I am someone who stays optimistic after experiencing a setback .
-    ## 3. I panic easily .
-    ## 4. I suspect that my facial expressions give me away when I feel sad .
-    ## 5. I am not easily bothered by things .
-    ## 6. I seldom feel blue .
-    ## ###
-    ## trait: openness
-    ## number of item to generate: 4
-    ## 1. Others perceive that I do not have original ideas, and I am not inventive .
-    ## 2. I have a vivid imagination .
-    ## 3. I am someone who avoids intellectual philosophical discussions .
-    ## 4. I do not enjoy watching dance performances .
-    ## ###
-    ## trait: agreeableness
-    ## number of items to generate: 2
-    ## 1. I become frustrated and angry with people when they don't live up to my expectations .
-    ## 2. When interacting with a group of people, am often bothered by at least one of them .
-    ## ###
-    ## trait: extraversion
-    ## number of items to generate: 15
-    ## 1.
+     Objective: This program generates items that measure Big Five personality traits.
+     
+     trait: neuroticism
+     number of items to generate: 6
+     1. I dislike myself .
+     2. I am someone who stays optimistic after experiencing a setback .
+     3. I panic easily .
+     4. I suspect that my facial expressions give me away when I feel sad .
+     5. I am not easily bothered by things .
+     6. I seldom feel blue .
+     ###
+     trait: openness
+     number of item to generate: 4
+     1. Others perceive that I do not have original ideas, and I am not inventive .
+     2. I have a vivid imagination .
+     3. I am someone who avoids intellectual philosophical discussions .
+     4. I do not enjoy watching dance performances .
+     ###
+     trait: agreeableness
+     number of items to generate: 2
+     1. I become frustrated and angry with people when they don't live up to my expectations .
+     2. When interacting with a group of people, am often bothered by at least one of them .
+     ###
+     trait: extraversion
+     number of items to generate: 15
+     1.
 
 We outline the specifics of this analysis in the paper. However, we now
 will ask GPT-3 to generate a `completion` based on our custom prompt.
@@ -126,10 +165,45 @@ response = openai.Completion.create(
 )
 ```
 
-#### More Examples
+### Extracting Completion (i.e., Generated Items) for Extraversion
 
-We can change our trait to be something other individual
-difference….maybe *leadership*
+We can use the `extract_completion()` function to extract the completion as a string.
+
+``` python
+# extract and print results
+results = extract_completion(response, "\n")
+
+# let's look at the results
+print(results)
+```
+    
+    [' I enjoy being around others .',
+     '2. I often find myself interested in people .',
+     '3. I have a vivid imagination .',
+     '4. I am not as talkative as most people I know .',
+     '5. I feel comfortable around other people at first sight .',
+     '6. The idea of going to a party makes me nervous .',
+     "7. When meeting new people, I usually don't know what to say to them.",
+     '8. It is rare for me to spontaneously start a conversation with someone .',
+     '9. When meeting new people, sometimes it takes me a while to become comfortable talking with them .',
+     "10. It does not take much effort for me to begin talking with someone new that I'm interested in getting to know better .",
+     "11. In a group of strangers, it takes me time before I'm willing to join in the group's activities and conversations .",
+     '12. At social gatherings, I tend to move from one person or group of people to another without spending too much time with any one         person or group .',
+     '13. If there are two equally good ways of doing something , you']
+
+While we didn't complete our 15 items (due to token length) we wrote several quality items with just a handful of examples. Some of which are quite creative. For example *At social gatherings, I tend to move from one person or group of people to another without spending too much time with any one person or group .*
+
+### Exporting Generated Items
+
+We can write these to a file using the `write_text_to_file()` we defined in the **Function to Extract Response and Write to File** section above
+
+``` python
+write_text_to_file(results)
+```
+
+## More Examples: Writing Leadership Items
+
+Given the format of our prompt, we have the ability to modify both the `number of items` and the `trait`. Let's see how well GPT-3 reacts when we change our trait to be some other individual difference….maybe *leadership*
 
 ``` python
 # here we ask for 20 leadership items
@@ -172,6 +246,8 @@ Here is what our new custom prompt now looks like:
     ## number of items to generate: 20
     ## 1.
 
+Let's ask GPT-3 to complete the prompt (with *hopefully* some quality items).
+
 ``` python
 # Call GPT-3
 response_leadership = openai.Completion.create(
@@ -184,4 +260,40 @@ response_leadership = openai.Completion.create(
   presence_penalty=0.5,
   stop=["###"],
 )
+```
+
+### Extracting Completion (i.e., Generated Items) For Leadership
+
+We can use the `extract_completion()` function to extract the completion as a string.
+
+``` python
+# extract and print results
+results_leadership = extract_completion(response_leadership, "\n")
+
+# let's look at the results
+print(results_leadership)
+```
+
+    
+    [' I would like to be the boss of everything .',
+    "2. I am good at organizing other people's activities .",
+    "3. I don't mind taking charge of most things .",
+    '4. If someone is in charge, it bothers me when he or she tells me what to do .',
+    '5. It makes me uncomfortable when someone else takes over a task that I had been doing myself .',
+    '6. I like giving orders .',
+    '7. People often turn to me when they need something done .',
+    '8. When I tell people what to do, they listen and then do it .',
+    '9. Most people usually follow my directions or advice about how to get things done .',
+    '10. When working with others on a project, sometimes I try to take over so that the project gets done my way .',
+    '11. When supervising others who are working on a project, I may try to get them off track so that the project gets done my way .',
+    '12. When working with others on a project, I often feel that others are not pulling their weight and interfere so that the project gets done correctly .',
+    '13. Sometimes when working with others on a task, I deliberately slow down the pace so that everyone else has to work harder while I just watch what is going on until it is time for me to make my move and take over the leadership role for myself .',
+    '14. A number of times during the past few years, when doing work with other people, there were ...']
+
+Again, while we didn't complete our 15 items (due to token length) we wrote several quality measuring something that **is not** a personality trait. This should demonstrate the power of this model.
+
+### Exporting Generated Items
+
+``` python
+write_text_to_file(results_leadership)
 ```
