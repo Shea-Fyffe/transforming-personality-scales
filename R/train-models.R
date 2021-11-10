@@ -103,7 +103,7 @@ run_analysis.list <- function(x, y, filter = NULL, analyses_labels = NULL, simpl
 #'
 #' # the xgboost model
 #' str(trained_models[[2]])
-train_model <- function(x, y, classifier = c("svmLinear2", "xgbTree"),
+train_model <- function(x, y, classifier = c("svmRadialCost", "xgbTree"),
                                control = list(
                                  method = "cv",
                                  number = 7,
