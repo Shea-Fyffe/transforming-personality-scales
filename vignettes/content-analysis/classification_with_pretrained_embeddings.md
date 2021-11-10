@@ -57,8 +57,8 @@ from the `~/data/content-analysis/` directory
 
 ``` r
 # source the functions used in the analysis
-source("/R/train-models.R") # training wrapper
-source("/R/evaluate-models.R") # used for confusion matrices
+source("./R/train-models.R") # training wrapper
+source("./R/evaluate-models.R") # used for confusion matrices
 
 # these function use several packages
 pkgs_used <- c("caret", "yardstick", "future", "parallel", "dplyr")
