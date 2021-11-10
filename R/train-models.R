@@ -24,10 +24,10 @@
 #' # the xgboost model for the second data set
 #' str(trained_models[[4]])
 run_analysis <- function(x, y, filter = NULL, analyses_labels = NULL, ...) {
-  UseMethod("run_analyses", x)
+  UseMethod("run_analysis", x)
 }
 #' @export
-run_analyses.default <- function(x, y, filter = NULL, analyses_labels = NULL, ...) {
+run_analysis.default <- function(x, y, filter = NULL, analyses_labels = NULL, ...) {
   .filter_data <- function(x, y, .filter) {
     if (!is.null(.filter)) {
       .prds <- names(x)[grepl(.filter, names(x), ignore.case = TRUE)]
@@ -46,7 +46,7 @@ run_analyses.default <- function(x, y, filter = NULL, analyses_labels = NULL, ..
   return(mdl)
 }
 #' @export
-run_analyses.list <- function(x, y, filter = NULL, analyses_labels = NULL, simplify = TRUE, ...) {
+run_analysis.list <- function(x, y, filter = NULL, analyses_labels = NULL, simplify = TRUE, ...) {
   .filter_data <- function(x, y, .filter) {
     if (!is.null(.filter)) {
       .prds <- names(x)[grepl(.filter, names(x), ignore.case = TRUE)]
