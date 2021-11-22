@@ -212,10 +212,10 @@ def format_output_data(raw_outputs, test_case_ids = None, label_list = None, out
   """Format test data to be output to CSV
   
   Args:
-    raw_outputs: The raw_outputs from simpletransformers model.predict()
+    raw_outputs: The raw_outputs from transformers model.predict()
     test_case_ids: A list of test case ids (optiona
     label_list: A list of *unique ordered* labels (optional)
-    output_probs: A string to prefix embedding column names (so that theyre not numbers)
+    output_probs: A boolean (True/False). If True (the default) will convert logit predictions to probabilities
   """
   if output_probs:
       out_df = softmax(raw_outputs, axis=1)
