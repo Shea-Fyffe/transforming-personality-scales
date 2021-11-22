@@ -213,7 +213,7 @@ def format_output_data(raw_outputs, test_case_ids = None, label_list = None, out
   
   Args:
     raw_outputs: The raw_outputs from transformers model.predict()
-    test_case_ids: A list of test case ids (optiona
+    test_case_ids: A list of test case ids (optional)
     label_list: A list of *unique ordered* labels (optional)
     output_probs: A boolean (True/False). If True (the default) will convert logit predictions to probabilities
   """
