@@ -12,9 +12,7 @@ performance.
 #### Opening this notebook in Google Colab
 
 This guide has been written for use *Google Colab*. Those that wish to
-run the code locally must install the python modules in the
-**Libraries** section below. Please see how to install python modules
-[here](https://docs.python.org/3/installing/index.html).
+run the code locally must install the python modules in the **Libraries** section below. Please see how to install python modules [here](https://docs.python.org/3/installing/index.html).
 
 [![Open In
 Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XbVgv15pRsaaVHyV19ON9wRdx19PxgU7?usp=sharing)

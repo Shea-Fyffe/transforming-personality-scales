@@ -233,12 +233,12 @@ openai.api_key = &quot;&lt;INSERT API KEY HERE&gt;&quot;</code></pre>
 </div>
 </div>
 </div>
-<div id="fine-tune-gpt-3-using-prompt-engineering" class="section level3">
-<h3>Fine-Tune GPT-3 Using Prompt Engineering</h3>
+<div id="fine-tune-gpt-3-using-prompt-engineering" class="section level2">
+<h2>Fine-Tune GPT-3 Using Prompt Engineering</h2>
 <hr />
 <p><em>Prompt engineering</em> allows us to give GPT-3 a few examples which we can pass as a string.</p>
-<div id="creating-custom-prompt" class="section level4">
-<h4>Creating Custom Prompt</h4>
+<div id="creating-custom-prompt" class="section level3">
+<h3>Creating Custom Prompt</h3>
 <p>We can first make a tempate then we will ask for different items of different traits by adding two variables: <code>aig_trait</code> and <code>aig_num_items</code>. However, we need to make sure we adjust <code>max_tokens</code> otherwise GPT-3 will start to rant.</p>
 <pre class="python"><code>#@title Specify the number and type of items to generate
 aig_num_items = 15
@@ -286,8 +286,9 @@ response = openai.Completion.create(
   presence_penalty=0.5,
   stop=[&quot;###&quot;],
 )</code></pre>
-<div id="extracting-completion" class="section level5">
-<h5>Extracting completion</h5>
+</div>
+<div id="extracting-completion-i.e.-generated-items-for-extraversion" class="section level3">
+<h3>Extracting Completion (i.e., Generated Items) for Extraversion</h3>
 <p>We can use the <code>extract_completion()</code> function to extract the completion as a string.</p>
 <pre class="python"><code># extract and print results
 results = extract_completion(response, &quot;\n&quot;)
@@ -307,11 +308,17 @@ print(results)</code></pre>
  &quot;11. In a group of strangers, it takes me time before I&#39;m willing to join in the group&#39;s activities and conversations .&quot;,
  &#39;12. At social gatherings, I tend to move from one person or group of people to another without spending too much time with any one         person or group .&#39;,
  &#39;13. If there are two equally good ways of doing something , you&#39;]</code></pre>
+<p>While we didn’t complete our 15 items (due to token length) we wrote several quality items with just a handful of examples. Some of which are quite creative. For example <em>At social gatherings, I tend to move from one person or group of people to another without spending too much time with any one person or group .</em></p>
+</div>
+<div id="exporting-generated-items" class="section level3">
+<h3>Exporting Generated Items</h3>
+<p>We can write these to a file using the <code>write_text_to_file()</code> we defined in the <strong>Function to Extract Response and Write to File</strong> section above</p>
+<pre class="python"><code>write_text_to_file(results)</code></pre>
 </div>
 </div>
-<div id="more-examples" class="section level4">
-<h4>More Examples</h4>
-<p>We can change our trait to be something other individual difference….maybe <em>leadership</em></p>
+<div id="more-examples-writing-leadership-items" class="section level2">
+<h2>More Examples: Writing Leadership Items</h2>
+<p>Given the format of our prompt, we have the ability to modify both the <code>number of items</code> and the <code>trait</code>. Let’s see how well GPT-3 reacts when we change our trait to be some other individual difference….maybe <em>leadership</em></p>
 <pre class="python"><code># here we ask for 20 leadership items
 aig_num_items = 20
 aig_trait = &quot;leadership&quot;
@@ -345,6 +352,7 @@ custom_prompt = f&quot;Objective: This program generates items that measure Big 
 ## trait: leadership
 ## number of items to generate: 20
 ## 1.</code></pre>
+<p>Let’s ask GPT-3 to complete the prompt (with <em>hopefully</em> some quality items).</p>
 <pre class="python"><code># Call GPT-3
 response_leadership = openai.Completion.create(
   engine=&quot;davinci&quot;,
@@ -356,6 +364,33 @@ response_leadership = openai.Completion.create(
   presence_penalty=0.5,
   stop=[&quot;###&quot;],
 )</code></pre>
+<div id="extracting-completion-i.e.-generated-items-for-leadership" class="section level3">
+<h3>Extracting Completion (i.e., Generated Items) For Leadership</h3>
+<p>We can use the <code>extract_completion()</code> function to extract the completion as a string.</p>
+<pre class="python"><code># extract and print results
+results_leadership = extract_completion(response_leadership, &quot;\n&quot;)
+
+# let&#39;s look at the results
+print(results_leadership)</code></pre>
+<pre><code>[&#39; I would like to be the boss of everything .&#39;,
+&quot;2. I am good at organizing other people&#39;s activities .&quot;,
+&quot;3. I don&#39;t mind taking charge of most things .&quot;,
+&#39;4. If someone is in charge, it bothers me when he or she tells me what to do .&#39;,
+&#39;5. It makes me uncomfortable when someone else takes over a task that I had been doing myself .&#39;,
+&#39;6. I like giving orders .&#39;,
+&#39;7. People often turn to me when they need something done .&#39;,
+&#39;8. When I tell people what to do, they listen and then do it .&#39;,
+&#39;9. Most people usually follow my directions or advice about how to get things done .&#39;,
+&#39;10. When working with others on a project, sometimes I try to take over so that the project gets done my way .&#39;,
+&#39;11. When supervising others who are working on a project, I may try to get them off track so that the project gets done my way .&#39;,
+&#39;12. When working with others on a project, I often feel that others are not pulling their weight and interfere so that the project gets done correctly .&#39;,
+&#39;13. Sometimes when working with others on a task, I deliberately slow down the pace so that everyone else has to work harder while I just watch what is going on until it is time for me to make my move and take over the leadership role for myself .&#39;,
+&#39;14. A number of times during the past few years, when doing work with other people, there were ...&#39;]</code></pre>
+<p>Again, while we didn’t complete our 15 items (due to token length) we wrote several quality measuring something that <strong>is not</strong> a personality trait. This should demonstrate the power of this model.</p>
+</div>
+<div id="exporting-generated-items-1" class="section level3">
+<h3>Exporting Generated Items</h3>
+<pre class="python"><code>write_text_to_file(results_leadership)</code></pre>
 </div>
 </div>
 </div>
