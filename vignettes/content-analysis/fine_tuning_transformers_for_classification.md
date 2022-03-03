@@ -11,7 +11,7 @@ the fine-tuning process involves training models with a relatively small
 amount of items with known trait labels. While this notebook
 demonstrates how these models can be used for *content analysis* (see
 [Short et al.,
-2018](https://doi.org/10.1146/annurev-orgpsych-032117-104622)).
+2018](https://doi.org/10.1146/annurev-orgpsych-032117-104622)), they have the potential to be implemented in other parts of the scale development process (e.g., *automated item generation*, *personality assessment*).
 
 #### Opening this notebook in Google Colab
 
@@ -35,13 +35,13 @@ More information on the `Transformers` library can be seen
 ``` python
 #@title Installing Transformers
 
-## Uncomment command below to install Simple Transformers
+## Uncomment command below to install Transformers
 ! pip install transformers
 ! pip install sentencepiece
 ```
 
 ``` python
-# load text classification modules from simpletransformers
+# load text classification modules from transformers
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, TrainingArguments, Trainer
 
 # data libraries
