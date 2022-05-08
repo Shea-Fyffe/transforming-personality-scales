@@ -20,7 +20,7 @@
 # RStudio files
 .Rproj.user/
 
-# produced vignettes
+# produced vignettes in MD form only
 vignettes/**/*.html
 vignettes/**/*.pdf
 vignettes/**/*.Rmd
