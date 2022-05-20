@@ -7,6 +7,15 @@ By reframing a classification task into a *language modeling* task, transformers
 
 *Remember*: you will need to register for an API key on OpenAI's website [here](https://beta.openai.com/). There are also several open source versions available; however, they've yet to achieve GPT-3's level of performance.
 
+#### Opening this notebook in Google Colab
+
+This guide has been written for use *Google Colab*. We *strongly* recommend using the Colab tutorial. However, those that wish to
+run the code locally must install the python modules in the **Libraries** section below. Please see how to install python modules
+[here](https://docs.python.org/3/installing/index.html).
+
+[![Open In
+Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XbVgv15pRsaaVHyV19ON9wRdx19PxgU7?usp=sharing)
+
 ### Libraries
 
 Colab comes with a large number of Python libraries pre-installed. However, `openai` and `transformers` are not libraries pre-installed libraries, however, these library can be installed by using the code below.

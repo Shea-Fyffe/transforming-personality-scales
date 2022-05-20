@@ -14,9 +14,8 @@ as clustering and classification.
 
 #### Opening this notebook in Google Colab
 
-This guide has been written for use *Google Colab*. Those that wish to
-run the code locally must install the python modules in the
-**Libraries** section below. Please see how to install python modules
+This guide has been written for use *Google Colab*. We *strongly* recommend using the Colab tutorial. However, those that wish to
+run the code locally must install the python modules in the **Libraries** section below. Please see how to install python modules
 [here](https://docs.python.org/3/installing/index.html).
 
 [![Open In
