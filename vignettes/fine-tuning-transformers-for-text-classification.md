@@ -1,7 +1,7 @@
 # Fine-tuning Transformer Models for Text Classification 
 ================
 
-This colab is written in **Python** to illistrate the process of
+This colab is written in **Python** to illustrate the process of
 *fine-tuning* (see [Lui et al.,
 2020](https://doi.org/10.1007/978-981-15-5573-2)) state-of-the-art
 **Transformer** models to classify personality items. In this context
@@ -262,7 +262,7 @@ class TextClassificationDataset(torch.utils.data.Dataset):
 ------------------------------------------------------------------------
 
 We define our variables for purposes described in our research
-manuscripte. However, we encourage researchers and practitioners to try
+manuscript. However, we encourage researchers and practitioners to try
 out alternative models. In addition, we wanted to minimize the tuning
 hyper-parameters during training as the aim of this research is to
 highlight Transformers in a baseline sense.
