@@ -1,4 +1,4 @@
-Text Classification with Fixed Pre-trained Embeddings
+# Text Classification with Fixed Pre-trained Embeddings
 ================
 
 This code is written in **R** to illustrate the process of *text
@@ -51,7 +51,7 @@ command-line using the following commands:
 ### Importing Functions, Data, and Packages
 
 We use the user defined functions found in the `./R/` folder and data
-from the `./data/` directory
+from the `./data/text-classification/` directory
 
 ##### Packages
 
@@ -69,12 +69,12 @@ sapply(pkgs_used, install.packages, dependencies= TRUE)
 
 ##### Import Data
 
-Data for this research can be found in `./data/`. These
+Data for this research can be found in `./data/text-classification/`. These
 files contain the pattern `.*-embedding-data.csv`.
 
 ``` r
 # get a list of file paths
-embedding_data_files <- list.files(path = "./data/", pattern = "embedding[-]data\\.csv$", full.names = TRUE)
+embedding_data_files <- list.files(path = "./data/text-classification/", pattern = "embedding[-]data\\.csv$", full.names = TRUE)
 
 # import data
 embedding_datasets <- lapply(embedding_data_files, read.csv, stringsAsFactors = FALSE)

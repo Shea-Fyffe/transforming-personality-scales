@@ -1,7 +1,5 @@
-Fine-Tuning Transformers for Classification
+# Fine-tuning Transformer Models for Text Classification 
 ================
-
-# Fine-tuning Transformer Models for Text Classification
 
 This colab is written in **Python** to illistrate the process of
 *fine-tuning* (see [Lui et al.,
