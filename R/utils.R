@@ -1,3 +1,29 @@
+#' Flag duplicate strings in a character vector
+#'
+#' @param x Required character vector of words, sentences, or documents to identify duplicates within.
+#' @param make_first_case_unique Treat first occurrence of a duplicate as unique? (default: TRUE)
+#' @param consider_apostrophes Consider apostrophes when flagging duplicates (default: FALSE)
+#' @param consider_hyphens Consider hyphens when flagging duplicates (default: FALSE)
+#' @param ... Additional arguments that can be passed to gsub before flagging duplicates
+#'
+#' @return A logical vector of \code(length(x)) indicating duplicate elements of \code(x)
+#' @export
+#'
+#' @examples
+flag_duplicates <- function(x, make_first_case_unique = TRUE, consider_apostrophes = FALSE, consider_hyphens = FALSE, ...) {
+    stopifnot(exprs = {
+        is.character(x)
+        all(vapply(c(make_first_case_unique, consider_apostrophes, consider_hyphens), is.logical, FUN.VALUE = logical(1)))
+    })
+    keep_pattern <- c("a-z0-9", "'", "-")
+    keep_pattern <- sprintf("[^%s]+", paste0(keep_pattern[c(TRUE, consider_apostrophes, consider_hyphens)], collapse = ""))
+    x <- gsub(keep_pattern, "", tolower(x), ...)
+    dup_x <- duplicated(x)
+    if (make_first_case_unique) {
+        return(dup_x)
+    }
+    return(x %in% x[dup_x])
+}
 #' Title
 #'
 #' @param fa_model A
