@@ -24,7 +24,7 @@ flag_duplicates <- function(x, make_first_case_unique = TRUE, consider_apostroph
     }
     return(x %in% x[dup_x])
 }
-#' Title
+#' Extract Factor Loadings from psych::fa Object
 #'
 #' @param fa_model A
 #' @param ...
@@ -45,3 +45,67 @@ extract_efa_loadings_matrix <- function(fa_model, append_model_info_to_names = T
     }
     return(res)
 }
+
+#' Calculate the consensus label among a matrix of labels
+#'
+#' Used to calculate the consensus among raters
+#'
+#' @param x A data.frame or matrix of label counts where each row represents a
+#'   document and each column a label. Additionally, can be a character vector
+#'   of labels, if so, the argument \code{doc_ids} must be defined.
+#' @param doc_ids If \code{x} is a character vector of predicted labels,
+#'   \code{doc_ids} must be an equal length character vector identifying the
+#'   document corresponding to the prediction.
+#'
+#' @return A vector of consensus labels
+#'
+#' @examples
+#'
+calculate_consensus_ratings <- function(x, ...) {
+    if (is.factor(x)) x <- as.character(x)
+    UseMethod("calculate_consensus_ratings", x)
+}
+
+find_top_count <- function(x, xn) {
+    stopifnot({
+        is.numeric(x)
+        is.character(xn)
+    })
+    max_indx <- seq_along(x)[x == max(x, na.rm = TRUE)]
+    if (length(max_indx) > 1L) {
+        return(xn[sample(max_indx, 1L)])
+    }
+    return(xn[max_indx])
+}
+
+calculate_consensus_ratings.character <- function(x, doc_ids) {
+    stopifnot(any(duplicated(doc_ids)))
+    rating_counts <- tapply(x, doc_ids, table)
+    res <- vapply(rating_counts, function(counts_i) {
+        find_top_count(counts_i, names(counts_i))
+    }, FUN.VALUE = character(1L))
+    return(res)
+}
+
+calculate_consensus_ratings.default <- function(x) {
+    stopifnot(inherits(x, c("matrix", "data.frame")))
+    number_col <- vapply(x, is.numeric, FUN.VALUE = logical(1L))
+    if (!all(number_col)) stop("x must be a data.frame or matrix of only numeric columns")
+    vlabs <- colnames(x)
+    res <- apply(x, MARGIN = 1, function(row_i) {
+        find_top_count(row_i, vlabs)
+    }, simplify = TRUE)
+    return(res)
+}
+#' For flagging efa items
+flag_criteria <- function(m, thresh = .40, cross_load_prop = .75, ...) {
+    stopifnot(inherits(m, c("data.frame", "matrix")))
+    m_ordered <- t(apply(m, MARGIN = 1, FUN = function(i) {
+        abs(i)[order(abs(i), decreasing = TRUE)]
+    }))
+    min_load <- m_ordered[, 1] < thresh
+    cross_load <- (m_ordered[, 2] / m_ordered[, 1]) > cross_load_prop
+    return(list(no_loading = min_load, cross_loading = cross_load, overall_flag = min_load | cross_load))
+}
+
+

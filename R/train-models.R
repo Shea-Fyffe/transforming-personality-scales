@@ -103,13 +103,13 @@ run_analysis.list <- function(x, y, filter = NULL, analyses_labels = NULL, simpl
 #'
 #' # the xgboost model
 #' str(trained_models[[2]])
-train_model <- function(x, y, classifier = c("svmRadialCost", "xgbTree"),
+train_model <- function(x, y, classifier = c("svmLinear2", "xgbTree"),
                                control = list(
                                  method = "cv",
                                  number = 7,
                                  allowParallel = TRUE,
                                  classProbs = TRUE
-                               ), metric = "Accuracy", SEED = 46, ...) {
+                               ), metric = "Accuracy", SEED = 42, ...) {
   control_args <- do.call(caret::trainControl, control)
   # set-up parallel processing (if allowed)
   if (control_args$allowParallel) {

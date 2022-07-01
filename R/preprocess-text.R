@@ -80,7 +80,6 @@ clean_text <- function(x, lowercase = TRUE, convert_contract = TRUE, convert_num
 
   return(x)
 }
-
 #' A dataset of common English contractions
 #'
 #' @return A data.frame
@@ -398,4 +397,21 @@ get_common_contractions <- function() {
       "why will"
     )
   )
+}
+normalize_text <- function(x, other_report_index = NULL) {
+    stopifnot(is.character(x))
+    prepend_i <- !grepl("[^I]\\b", x, ignore.case = T)
+    append_period <- !grepl("\\.$", x)
+    # If text starts with I and ends with a period return x
+    if (sum(c(prepend_i, append_period)) == 0) {
+        return(x)
+    }
+    x[append_period] <- paste0(x[append_period], ".")
+    if (!is.null(other_report_index)) {
+        stopifnot(is.numeric(other_report_index))
+        prepend_i[other_report_index] <- FALSE
+    }
+    x[prepend_i] <- paste0("I ", x[prepend_i])
+
+    return(x)
 }
