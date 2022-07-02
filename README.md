@@ -24,7 +24,7 @@ Here is the list of tutorials described in our research:
 | [**Few Shot Learning with Transformers**](https://anonymous.4open.science/r/transforming-personality-scales/vignettes/few-shot-learning-with-transformers.md) | -`train-data.csv` -`test-data.csv`  |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XbVgv15pRsaaVHyV19ON9wRdx19PxgU7?usp=sharing)
 
 - Most example use `Python` though some `R` utilities are provided.
-- Data can be found in the `data/` folder of this repository.
+- Data can be found in the `data/` and `raw-data/` folders of this repository.
 - We recommend using the **Colab notebooks** (in the tables above) to progress through the examples more easily.
 
 
