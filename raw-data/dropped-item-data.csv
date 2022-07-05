@@ -1,0 +1,72 @@
+row_id,scale,scale_type,source_doi,items_base,items_dropped,items_kept,precision,factors,dropped_items_page,method_for_dropping,intentionally_shortened
+1,BFAS,Personality,https://doi.org/10.1037/0022-3514.93.5.880,150,34,116,0.773333333,5,866,factor analysis,0
+2,BFAS,Personality,https://doi.org/10.1037/0022-3514.93.5.880,116,16,100,0.862068966,5,866,factor analysis,1
+3,ABC5,Personality,https://doi.org/10.1037/0022-3514.63.1.146,587,47,540,0.919931857,5,147##148,subjective,1
+4,ABC5,Personality,https://doi.org/10.1037/0022-3514.63.1.146,540,40,500,0.925925926,5,147##148,factor analysis,1
+5,IPIP-NEO-PI-R,Personality,https://doi.org/10.1037/pas0000004,300,120,180,0.6,5,1073##1074,factor analysis,1
+6,TCI,Temperament,https://doi.org/10.1001/archpsyc.1993.01820240059008,226,8,218,0.96460177,7,982##983,subjective,1
+7,MPQ,Personality,https://doi.org/10.4135/9781849200479.n13,1082,267,815,0.753234751,12,264,factor analysis,1
+8,7FACTOR,Personality,https://doi.org/10.1037/0022-3514.73.6.1296,500,360,140,0.28,7,1305,factor analysis,1
+9,IMPULSE,Personality,https://doi.org/10.1037/0021-9010.76.5.732,35,15,20,0.571428571,1,737,factor analysis,0
+10,CFD,Curiosity,https://doi.org/10.1207/s15327752jpa8202_3,27,7,20,0.740740741,1,150,other metric-item total correlations,0
+11,CFD,Curiosity,https://doi.org/10.1207/s15327752jpa8202_3,20,2,18,0.9,1,150,subjective,1
+12,CFD,Curiosity,https://doi.org/10.1207/s15327752jpa8202_3,18,3,15,0.833333333,1,151,factor analysis,0
+13,CMNI,Masculinity,https://doi.org/10.1037/a0015481,94,44,50,0.531914894,1,181,factor analysis,1
+14,CMNI,Masculinity,https://doi.org/10.1037/a0015481,50,4,46,0.92,1,181,subjective,1
+15,NPI,Personality,https://doi.org/10.1080/00223890802388590,40,17,23,0.575,1,596,factor analysis,0
+16,BIDR,Social Desirability,https://doi.org/10.1037/0022-3514.46.3.598,167,127,40,0.239520958,4,601,factor analysis,1
+17,INTEL-HUMILITY,Personality,https://doi.org/10.1080/00223891.2015.1068174,187,69,118,0.631016043,4,212,subjective,1
+18,INTEL-HUMILITY,Personality,https://doi.org/10.1080/00223891.2015.1068174,118,45,73,0.618644068,4,212,subjective,1
+19,INTEL-HUMILITY,Personality,https://doi.org/10.1080/00223891.2015.1068174,73,51,22,0.301369863,4,213,factor analysis,1
+20,GOI,Goal Orientation,https://doi.org/10.1177/0013164497057006009,50,34,16,0.32,3,1003,factor analysis,1
+21,WVS,Values,https://doi.org/10.1177/1069072720901604,80,7,73,0.9125,11,537,other metric-v statistic,1
+22,WVS,Values,https://doi.org/10.1177/1069072720901604,73,21,52,0.712328767,11,538,factor analysis,0
+23,ENVATT,Attitudes,https://doi.org/10.1016/j.jenvp.2004.09.001,99,22,77,0.777777778,2,293,factor analysis,1
+24,NEQ,Substance Abuse,https://doi.org/10.1037/1040-3590.5.1.19,139,37,102,0.73381295,9,21,other metric-endorsement,1
+25,NEQ,Substance Abuse,https://doi.org/10.1037/1040-3590.5.1.19,102,7,95,0.931372549,9,21,other metric-item total correlations,1
+26,NEQ,Substance Abuse,https://doi.org/10.1037/1040-3590.5.1.19,95,17,78,0.821052632,9,21,factor analysis,1
+27,DAS,Attitudes,https://doi-org/10.1037/1040-3590.3.3.478,100,2,98,0.98,9,479,subjective,1
+28,DAS,Attitudes,https://doi-org/10.1037/1040-3590.3.3.478,98,1,97,0.989795918,9,479,other metric-kurtosis,1
+29,DAS,Attitudes,https://doi-org/10.1037/1040-3590.3.3.478,97,9,88,0.907216495,9,479,other metric-sampling adequacy,1
+30,DAS,Attitudes,https://doi-org/10.1037/1040-3590.3.3.478,88,22,66,0.75,9,479,factor analysis,1
+31,BRAND,Personality,https://doi.org/10.1016/j.ijresmar.2008.12.002,244,136,108,0.442622951,5,100,subjective,1
+32,BRAND,Personality,https://doi.org/10.1016/j.ijresmar.2008.12.002,108,68,40,0.37037037,5,100,subjective,1
+33,BRAND,Personality,https://doi.org/10.1016/j.ijresmar.2008.12.002,40,15,25,0.625,5,100,factor analysis,0
+34,NCS,Need for Cognition,https://doi.org/10.1037/0022-3514.42.1.116,45,9,36,0.8,1,119,other metric-fstatistic,0
+35,RST-PQ,Personality,https://doi.org/10.1037/pas0000273,248,78,170,0.685483871,6,1430,factor analysis,1
+36,RST-PQ,Personality,https://doi.org/10.1037/pas0000273,78,13,65,0.833333333,6,1430,factor analysis,0
+37,BSIQ,Body Image,https://doi.org/10.1207/s15327841mpee0304_4,99,20,79,0.797979798,9,235,factor analysis,1
+38,DSM-IV,Personality,https://doi.org/10.1017/s0033291711002674,296,65,231,0.780405405,5,1884,other metric-test information,1
+39,DSM-IV,Personality,https://doi.org/10.1017/s0033291711002674,231,11,220,0.952380952,5,1885,factor analysis,0
+40,PFES,Employability,https://doi.org/10.1177/1069072718788645,42,16,26,0.619047619,6,617,factor analysis,1
+41,ICD-11,Personality,https://doi.org/10.1037/pas0000459,130,26,104,0.8,5,157,factor analysis,1
+42,RP,Motivation,https://doi.org/10.1037/1040-3590.10.2.97,328,218,110,0.335365854,14,99,factor analysis,1
+43,BQ18,Cognitions,https://doi.org/10.1177/02762366221082508,18,5,13,0.722222222,2,6,factor analysis,0
+44,SVS,Strengths,https://psycnet.apa.org/record/2004-13277-000,19,12,7,0.368421053,1,284,subjective,1
+45,WPD,Interpersonal Deviance,https://doi.org/10.1037/0021-9010.85.3.349,58,30,28,0.482758621,2,351,other metric-item total correlations,0
+46,WPD,Interpersonal Deviance,https://doi.org/10.1037/0021-9010.85.3.349,28,4,24,0.857142857,2,351,factor analysis,0
+47,IPRS,Interpersonal Problems,https://doi.org/10.1037/pas0001007,212,116,96,0.452830189,7,530,factor analysis,1
+48,GREED,Dispositional Greed,http://dx.doi.org/10.1027/1015-5759/a000647 ,37,33,4,0.108108108,1,97,factor analysis,0
+49,DRS,Dispositional Resilience, http://dx.doi.org/10.1027/1015-5759/a000709,36,8,28,0.777777778,3,5,factor analysis,0
+50,MSCS,Self-Control,http://dx.doi.org/10.1037/pas0000950,99,69,30,0.303030303,6,1064,factor analysis,1
+51,TACS,Type Depression,http://dx.doi.org/10.1111/pcn.12842 ,71,49,22,0.309859155,3,450,other metric-item total correlations,1
+52,SMU-SNS,Motives,http://dx.doi.org/10.1371/journal.pone.0225781 ,33,6,27,0.818181818,13,10,factor analysis,0
+53,COM,Competitiveness,http://dx.doi.org/10.1007/s40732-014-0083-2 ,65,28,37,0.569230769,4,886,factor analysis,0
+54,PIES,Emotion Invalidation,https://doi.org/10.1037/pas0000584,37,27,10,0.27027027,1,1460,factor analysis,0
+55,TEAM,Effervescent Assembly,http://dx.doi.org/10.1037/pas0000434,32,21,11,0.34375,1,1354,subjective,1
+56,EA,Experiential Avoidance,http://dx.doi.org/10.1037/a0023242 ,170,91,79,0.464705882,6,696,factor analysis,1
+57,HAT,Hostile Automatic Thoughts,http://dx.doi.org/10.1023/A:1021988511695 ,75,45,30,0.4,3,482,factor analysis,0
+58,MRIS,Rumination,http://dx.doi.org/10.1007/s10865-013-9531-8 ,60,28,32,0.533333333,4,796,factor analysis,0
+59,KDOC,Creativity,http://dx.doi.org/10.1037/a0029751,94,37,57,0.606382979,5,302,factor analysis,1
+60,MAP,Self-Actualization,http://dx.doi.org/10.2224/sbp.1997.25.4.353 ,35,8,27,0.771428571,1,358,factor analysis,0
+61,MINI-IPIP,Personality,https://doi.org/10.1037/1040-3590.18.2.192,50,30,20,0.4,5,194,factor analysis,1
+62,MINI-IPIP,Personality,https://doi.org/10.1037/1040-3590.18.2.192,20,3,17,0.85,5,194##195,factor analysis,0
+63,MAAS,Mindfulness,https://doi.org/10.1037/0022-3514.84.4.822,184,129,55,0.298913044,1,825,other metric-v statistic,1
+64,MAAS,Mindfulness,https://doi.org/10.1037/0022-3514.84.4.823,55,31,24,0.436363636,1,825,other metric-skewness,1
+65,MAAS,Mindfulness,https://doi.org/10.1037/0022-3514.84.4.824,24,9,15,0.625,1,827,factor analysis,0
+66,SWLS,Life Satisfaction,http://dx.doi.org/10.1207/s15327752jpa4901_13,48,38,10,0.208333333,1,72,factor analysis,0
+67,SWLS,Life Satisfaction,http://dx.doi.org/10.1207/s15327752jpa4901_13,10,5,5,0.5,1,72,subjective,0
+68,GRIT,Grit,http://dx.doi.org/10.1037/0022-3514.92.6.1087,27,10,17,0.62962963,2,1090,subjective,0
+69,GRIT,Grit,http://dx.doi.org/10.1037/0022-3514.92.6.1087,17,5,12,0.705882353,2,1090,factor analysis,0
+70,ERQ,Emotional Regulation,http://dx.doi.org/10.1037/0022-3514.85.2.348 ,10,0,10,1,2,351,factor analysis,0
+71,SCS,Self-Control,https://doi.org/10.1111/j.0022-3506.2004.00263.x,93,57,36,0.387096774,6,282,subjective,1
