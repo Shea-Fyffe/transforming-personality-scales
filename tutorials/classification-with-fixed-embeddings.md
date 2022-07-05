@@ -220,8 +220,8 @@ models at once (*note*: this may take a few minutes). See
 `/R/train-models.R` for a description of the arguments and more info.
 
 ``` r
-# train models by subsetting the columns starting with f and use the column 'label' as y
-trained_models <- run_analysis(train_data, "label", "^f_",
+# train models by subsetting the columns containing _V and some numbers and use the column 'label' as y
+trained_models <- run_analysis(train_data, "label", "_V\\d+",
                                   analyses_lab = analysis_labels)
 
 # append the classifier used to the analysis labels
