@@ -26,8 +26,8 @@ flag_duplicates <- function(x, make_first_case_unique = TRUE, consider_apostroph
 }
 #' Extract Factor Loadings from psych::fa Object
 #'
-#' @param fa_model A
-#' @param ...
+#' @param fa_model A factor analysis model object from \code{psych::fa()}
+#' @param append_model_info_to_names Append model information to loading matrix (default: TRUE)
 #'
 #' @return A data.frame of factor loadings
 #' @export
