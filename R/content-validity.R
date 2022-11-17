@@ -9,7 +9,7 @@
 #'   each column a judge (Required)
 #' @param key A character vector with a length equal to \code{nrow(ratings)}
 #'   containing correct or actual codes (Required)
-#' @param quietly Supress message describing the number of judges and items?
+#' @param quietly Suppress message describing the number of judges and items?
 #'   True by default. (Optional)
 #'
 #' @references Anderson, J. C., & Gerbing, D. W. (1991). Predicting the
@@ -23,9 +23,23 @@
 #' @return A data.frame with rows equal to \code{nrow(ratings)} of substantive
 #'   agreement \eqn{p_sa} and substantive validity \eqn{c_sv} values for each
 #'   item
-#' @export
 #' @examples
-#' rating_data <- data("human-ratings")
+#'
+#' # simulate some Big Five Construct Ratings for 3 raters and 5 items
+#' big_five <- c("agreeableness", "conscientiousness", "extraversion", "neuroticism", "openness")
+#'
+#' rating_data <-
+#'   data.frame(
+#'     rater1 = big_five[c(1, 1, 2, 3, 3)], rater2 = big_five[c(1, 2, 2, 3, 4)],
+#'     rater3 = big_five[c(1, 2, 5, 3, 5)]
+#'   )
+#'
+#' # the intended constructs of the items are agreeableness, agreeableness, conscientiousness, extraversion, neuroticism
+#' item_keys <- big_five[c(1, 1, 2, 3, 4)]
+#'
+#' # calculate content validity metrics
+#' calculate_content_validity(rating_data, item_keys)
+#' @export
 calculate_content_validity <- function(ratings, key, quietly = TRUE) {
   stopifnot({
     inherits(ratings, c("data.frame", "matrix")) && ncol(ratings) > 1L
@@ -57,10 +71,10 @@ calculate_content_validity <- function(ratings, key, quietly = TRUE) {
   }
   agg_ratings <- vector("list", nrow(ratings))
   for (i in seq(nrow(ratings))) {
-    agg_ratings[[i]] <- list(
+    agg_ratings[[i]] <- c(
       sub_agreement = calc_psa(ratings[i, ], key[i]),
       sub_validity = calc_csv(ratings[i, ], key[i])
     )
   }
-  return(data.frame(do.call("rbind", agg_ratings)))
+  return(data.frame((do.call("rbind", agg_ratings))))
 }
