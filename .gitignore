@@ -13,10 +13,10 @@
 /*.Rcheck/
 # RStudio files
 .Rproj.user/
-# produced vignettes in MD form only
-vignettes/**/*.html
-vignettes/**/*.pdf
-vignettes/**/*.Rmd
+# produced tutorials in MD form only
+tutorials/**/*.html
+tutorials/**/*.pdf
+tutorials/**/*.md
 # OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
 .httr-oauth
 # knitr and R markdown default cache directories
@@ -33,6 +33,8 @@ archive/
 *_archive/
 results/
 supplemental-materials/
+scripts/
 figs/*.png
 figs/*.pub
 /*.Rmd
+efa-item-data-v01.csv
