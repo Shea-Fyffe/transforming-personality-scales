@@ -61,11 +61,43 @@ extract_efa_loadings_matrix <- function(fa_model, append_model_info_to_names = T
 #'
 #' @examples
 #'
+#' @export
 calculate_consensus_ratings <- function(x, ...) {
     if (is.factor(x)) x <- as.character(x)
     UseMethod("calculate_consensus_ratings", x)
 }
+#' @method calculate_consensus_ratings character
+#' @export
+calculate_consensus_ratings.character <- function(x, doc_ids) {
+    stopifnot(any(duplicated(doc_ids)))
+    rating_counts <- tapply(x, doc_ids, table)
+    res <- vapply(rating_counts, function(counts_i) {
+        find_top_count(counts_i, names(counts_i))
+    }, FUN.VALUE = character(1L))
+    return(res)
+}
+#' @method calculate_consensus_ratings default
+#' @export
+calculate_consensus_ratings.default <- function(x) {
+    stopifnot(inherits(x, c("matrix", "data.frame")))
+    number_col <- vapply(x, is.numeric, FUN.VALUE = logical(1L))
+    if (!all(number_col)) stop("x must be a data.frame or matrix of only numeric columns")
+    vlabs <- colnames(x)
+    res <- apply(x, MARGIN = 1, function(row_i) {
+        find_top_count(row_i, vlabs)
+    }, simplify = TRUE)
+    return(res)
+}
 
+#' Helper used in \code{\link{calculate_consensus_ratings}}
+#'
+#' @param x A character vector of values (usually labels)
+#' @param xn A character vector of names of \code{x}
+#'
+#' @return
+#' @export
+#'
+#' @examples
 find_top_count <- function(x, xn) {
     stopifnot({
         is.numeric(x)
@@ -77,35 +109,82 @@ find_top_count <- function(x, xn) {
     }
     return(xn[max_indx])
 }
-
-calculate_consensus_ratings.character <- function(x, doc_ids) {
-    stopifnot(any(duplicated(doc_ids)))
-    rating_counts <- tapply(x, doc_ids, table)
-    res <- vapply(rating_counts, function(counts_i) {
-        find_top_count(counts_i, names(counts_i))
-    }, FUN.VALUE = character(1L))
-    return(res)
-}
-
-calculate_consensus_ratings.default <- function(x) {
-    stopifnot(inherits(x, c("matrix", "data.frame")))
-    number_col <- vapply(x, is.numeric, FUN.VALUE = logical(1L))
-    if (!all(number_col)) stop("x must be a data.frame or matrix of only numeric columns")
-    vlabs <- colnames(x)
-    res <- apply(x, MARGIN = 1, function(row_i) {
-        find_top_count(row_i, vlabs)
-    }, simplify = TRUE)
-    return(res)
-}
-#' For flagging efa items
-flag_criteria <- function(m, thresh = .40, cross_load_prop = .75, ...) {
+#' Flag Items based on EFA Factor Loadings
+#'
+#' @param m A data.frame or matrix of factor loadings (produced by a function like \code{\link[psych]{fa}()})
+#'   where each row represents an item and each column a generic factor.
+#' @param thresh
+#' @param cross_load_prop
+#'
+#' @return
+#' @export
+#'
+#' @examples
+flag_criteria <- function(m, thresh = .40, cross_load_prop = .75) {
     stopifnot(inherits(m, c("data.frame", "matrix")))
     m_ordered <- t(apply(m, MARGIN = 1, FUN = function(i) {
         abs(i)[order(abs(i), decreasing = TRUE)]
     }))
     min_load <- m_ordered[, 1] < thresh
-    cross_load <- (m_ordered[, 2] / m_ordered[, 1]) > cross_load_prop
+    cross_load <- (m_ordered[, 2] / m_ordered[, 1]) >= cross_load_prop & !min_load
     return(list(no_loading = min_load, cross_loading = cross_load, overall_flag = min_load | cross_load))
 }
 
+#' Algorithm to automatically Determine Factor Labels from EFA
+#'
+#' @param m
+#' @param ground_truth
+#'
+#' @return
+#' @export
+#'
+#' @examples
+determine_efa_factor_labels <- function(m, ground_truth) {
+    stopifnot( {
+        inherits(m, c("data.frame", "matrix"))
+        is.character(ground_truth) && length(ground_truth) == nrow(m)
+    })
+    indx_mat <- apply(m, MARGIN = 2, FUN = function(x) {
+        tapply(x, ground_truth, FUN = function(xi) {
+            mean(abs(xi))
+        })
+    })
+    mapped_names <- row.names(indx_mat)
+    res <- sapply(as.data.frame(indx_mat), function(x) mapped_names[which.max(x)])
+    if (anyDuplicated(res) != 0L) {
+        stop("Unable to identify correct factors from ground_truth. Please manually inspect.", .call = FALSE)
+    }
+    res
+}
 
+#' Generate grammatically incorrect items
+#'
+#' @param x A character vector of items to base generation off of.
+#' @param split_pattern A valid regex pattern (or character) to split \code{x} into tokens
+#' @param num_to_generate Number of fake items to generate.
+#' @param remove_words Number of words to remove from \code{x} before generating fake item.
+#' @param add_sample_word Logical. Randomly sample word from vocabulary before generating item?
+#'
+#' @return
+#' @export
+#'
+#' @examples
+generate_denatured_text <- function(x, split_pattern = "\\s+", num_to_generate = length(x) %/% 4L, remove_words = 1L, add_sample_word = TRUE) {
+    stopifnot({
+        is.character(x)
+    })
+    filter_fun <- \(s, n) {
+        s[-c(sample(seq_along(s), n))]
+    }
+    x <- strsplit(x, split = split_pattern)
+    word_corpus <- unique(unlist(x))
+    x <- lapply(x, FUN = function(i) {
+        .i <- filter_fun(i, n = remove_words)
+        if (add_sample_word) {
+            .i <- c(.i, sample(word_corpus, 1L))
+        }
+        sample(.i)
+    })
+    x <- sapply(x, paste0, collapse = " ")
+    return(sample(x, num_to_generate))
+}
