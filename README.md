@@ -82,6 +82,8 @@ command-line using the following commands:
 
 ## Google Colab
 
+We recommend accessing the software tutorials through Google Colaboratory (i.e., Google Colab), which is a relatively intuitive cloud-based service that allows researchers, practitioners, and students to access high-powered virtual machines at little-to-no cost (Bisong, 2019).
+
 For an overview of Google Colab please see the following notebook
 [![Open In
 Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/notebooks/pro.ipynb)
