@@ -38,3 +38,4 @@ figs/*.png
 figs/*.pub
 /*.Rmd
 efa-item-data-v01.csv
+rating-data.csv
