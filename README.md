@@ -1,10 +1,7 @@
 Getting Started
 ================
 
-Files can be downloaded individually using the `download file` button in
-the top left corner.
-
-![dl\_button](figs/repo/button.JPG)
+See table below for files related to each tutorial.
 
 ## Scale Development Tutorials
 
