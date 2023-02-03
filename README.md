@@ -1,12 +1,6 @@
 Getting Started
 ================
 
-#### Disclaimer
-
-To remain anonymous during the review process this Github repository has
-masked identifying information. This restricts the functionality of the
-repository as it *cannot* be cloned or downloaded as a `.zip` file.
-
 Files can be downloaded individually using the `download file` button in
 the top left corner.
 
@@ -16,11 +10,11 @@ the top left corner.
 
 | Task | Datasets Used | Colab Link
 |---|:---:|:---:|
-|[**Creating Fixed Sentence Embeddings**](https://anonymous.4open.science/r/transforming-personality-scales/tutorials/create-fixed-sentence-embeddings.ipynb) | `train-data.csv` -`test-data.csv`|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/14DpmE8PiT7f-7JQwQ3cLJCqF4QUUWT97?usp=sharing)
-|[**Text Classification with Fixed Embeddings**](https://anonymous.4open.science/r/transforming-personality-scales/tutorials/classification-with-fixed-embeddings.md) | -`aggregate-word-embedding-data.csv` -`sentence-SBERT-embedding-data.csv` -`sentence-USE-embedding-data.csv`|[![](https://img.shields.io/static/v1?label=%20&message=Open%20in%20R%20Studio&logo=rstudio&color=steelblue)](https://anonymous.4open.science/r/transforming-personality-scales/tutorials/classification-with-fixed-embeddings.md)
-|[**Fine-Tuning Transformers for Text Classification of Big Five Items**](https://anonymous.4open.science/r/transforming-personality-scales/tutorials/fine-tuning-transformers-for-text-classification.ipynb) | -`train-data.csv` -`test-data.csv`|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dNMJ2BuRu2l3JZq1TH0B2Fp6_WEoThXB?usp=sharing)
-|[**Fine-Tuning Transformers for Big Five Inclusion**](https://anonymous.4open.science/r/transforming-personality-scales/tutorials/fine-tuning-transformers-for-big5-inclusion.ipynb) | -`supplemental-item-data.csv`|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1FeXottyoM_-R-m_oD_Mbt5mcpDw5YwU9?usp=sharing)
-|[**Few Shot Learning with Transformers**](https://anonymous.4open.science/r/transforming-personality-scales/tutorials/few-shot-learning-with-transformers.ipynb) | -`train-data.csv` -`test-data.csv`|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XbVgv15pRsaaVHyV19ON9wRdx19PxgU7?usp=sharing)
+|[**Creating Fixed Sentence Embeddings**](https://github.com/Shea-Fyffe/transforming-personality-scales/blob/main/tutorials/create-fixed-sentence-embeddings.ipynb) | `train-data.csv` -`test-data.csv`|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/14DpmE8PiT7f-7JQwQ3cLJCqF4QUUWT97?usp=sharing)
+|[**Text Classification with Fixed Embeddings**](https://github.com/Shea-Fyffe/transforming-personality-scales/blob/main/tutorials/classification-with-fixed-embeddings.md) | -`aggregate-word-embedding-data.csv` -`sentence-SBERT-embedding-data.csv` -`sentence-USE-embedding-data.csv`|[![](https://img.shields.io/static/v1?label=%20&message=Open%20in%20R%20Studio&logo=rstudio&color=steelblue)](https://github.com/Shea-Fyffe/transforming-personality-scales/blob/main/tutorials/classification-with-fixed-embeddings.md)
+|[**Fine-Tuning Transformers for Text Classification of Big Five Items**](https://github.com/Shea-Fyffe/transforming-personality-scales/blob/main/tutorials/fine-tuning-transformers-for-text-classification.ipynb) | -`train-data.csv` -`test-data.csv`|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dNMJ2BuRu2l3JZq1TH0B2Fp6_WEoThXB?usp=sharing)
+|[**Fine-Tuning Transformers for Big Five Inclusion**](https://github.com/Shea-Fyffe/transforming-personality-scales/blob/main/tutorials/fine-tuning-transformers-for-big5-inclusion.ipynb) | -`supplemental-item-data.csv`|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1FeXottyoM_-R-m_oD_Mbt5mcpDw5YwU9?usp=sharing)
+|[**Few Shot Learning with Transformers**](https://github.com/Shea-Fyffe/transforming-personality-scales/blob/main/tutorials/few-shot-learning-with-transformers.ipynb) | -`train-data.csv` -`test-data.csv`|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Shea-Fyffe/transforming-personality-scales/blob/main/tutorials/few-shot-learning-with-transformers.ipynb)
 
 ---
 
@@ -59,7 +53,7 @@ command-line using the following commands:
 
 <!-- -->
 
-    $ git clone https://github.com/REDACTED-FOR-REVIEW.git
+    $ git clone https://github.com/Shea-Fyffe/transforming-personality-scales.git
 
 #### Mac
 
@@ -77,7 +71,7 @@ command-line using the following commands:
 
 <!-- -->
 
-    git clone https://github.com/REDACTED-FOR-REVIEW.git
+    git clone https://github.com/Shea-Fyffe/transforming-personality-scales.git
 
 ## Google Colab
 
