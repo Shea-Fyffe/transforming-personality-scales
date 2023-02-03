@@ -1,7 +1,7 @@
 Getting Started
 ================
 
-See table below for files related to each tutorial.
+See table below for files related to each tutorial. I will do my best to keep things up-to-date, but feel free to reach out you have any thoughts or suggestions (see contact info below).
 
 ## Scale Development Tutorials
 
@@ -77,3 +77,12 @@ We recommend accessing the software tutorials through Google Colaboratory (i.e.,
 For an overview of Google Colab please see the following notebook
 [![Open In
 Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/notebooks/pro.ipynb)
+
+### Contact Me
+
+If you have any questions or concerns---or want a copy of the research paper associated with this repository, please reach out:
+
+[![Linkedin Badge](https://img.shields.io/badge/-sheafyffe-blue?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/sheafyffe/)](https://www.linkedin.com/in/sheafyffe/)
+[![Gmail Badge](https://img.shields.io/badge/-shea.fyffe-c14438?style=flat&logo=Gmail&logoColor=white&link=mailto:shea.fyffe@gmail.com)](mailto:shea.fyffe@gmail.com)
+[![Lab Badge](https://img.shields.io/badge/-PAID%20Lab-006633?style=flat&link=https://sites.google.com/view/paid-lab/home)](https://sites.google.com/view/paid-lab/home)
+[![ResearchGate Badge](https://img.shields.io/badge/-Shea%20Fyffe-00CCBB?style=flat&logo=ResearchGate&logoColor=white&link=https://www.researchgate.net/profile/Shea-Fyffe)](https://www.researchgate.net/profile/Shea-Fyffe)
